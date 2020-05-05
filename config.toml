@@ -1,0 +1,19 @@
+baseURL = "n0nu11.tech"
+languageCode = "en-us"
+theme = "hugo-theme-console"
+title = "root@n0nu11"
+
+[params]
+  [[params.navlinks]]
+  name = "whoami/"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "projects/"
+  url = "projects/"
+
+  [[params.navlinks]]
+  name = "posts/"
+  url = "posts/"
+
+

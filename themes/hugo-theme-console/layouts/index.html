@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<h1>$ whoami</h1>
+
+<p>
+Hi. I'm Waseem Akram, A Tech Enthusiaist Based in India,  <a href="about/">(more)</a>
+</p>
+<br/>
+
+<h1>$ Latest posts</h1>
+
+<div class="posts-list">
+{{ with .Site.GetPage "/posts" }}
+    {{ range first 3 ((where .Pages ".Params.private" "!=" true) sort .Data.Pages "Date" "desc")}}
+        <div class="post">
+            <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>    
+            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+            {{ .Summary }}
+        </div>    
+    {{ end }}
+{{ end }}
+</div>
+
+{{ end }}
