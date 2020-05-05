@@ -4,9 +4,13 @@ theme = "hugo-theme-console"
 title = "root@n0nu11"
 
 [params]
+ [[params.navlinks]]
+  name = "~/"
+  url = "/"
+
   [[params.navlinks]]
   name = "whoami/"
-  url = "about/"
+  url = "whoami"
 
   [[params.navlinks]]
   name = "projects/"
