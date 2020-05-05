@@ -1,4 +1,4 @@
-baseURL = "https://n0nu11.tech"
+baseURL = "https://n0nu11.tech/"
 languageCode = "en-us"
 theme = "hugo-theme-console"
 title = "root@n0nu11"
