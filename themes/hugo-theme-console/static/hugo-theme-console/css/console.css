@@ -216,6 +216,11 @@ figure {
 }
 
 @media only screen and (max-width: 850px) {
+
+    .site-name {
+        overflow: hidden;
+        display: inline-block;
+    }
     
     .terminal-nav {
         align-items: flex-start;
