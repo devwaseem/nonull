@@ -2,15 +2,13 @@
 title: "Init 5: How it all Started"
 author: n0nu11
 layout: "post"
-published: false
 category:
 - personal
 tags:
 - personal
 - about
+description: "This Article explains how i got introduced to <b><u>Programming</u></b> and stuffs <br> and where i am now in <b>2020</b>"
 ---
-
-## Background
 
 Hi, My name is __Waseem Akram__ a.k.a **n0nu11**. I make web apps, mobile apps, hunt bugs and design a little bit of user interfaces.
 Well, I'm here to share you the wonderful but boring story of mine on how i got introduced to programming and making stuffs i like and much more. so grab a coffee or snacks because this is going to be a long journey.

@@ -2,7 +2,7 @@
 # Jekyll & Global Configuration
 ## Docs: https://jekyllrb.com/docs/configuration/
 # ---------------------------------------------------------------
-
+host: 0.0.0.0
 # Site
 title: n0nu11
 subtitle: 
@@ -76,7 +76,7 @@ plugins:
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `assets/` directory.
-favicon: /assets/favicon.ico
+favicon: /assets/images/logo.png
 
 # Set default keywords (Use a comma to separate)
 keywords: "n0nu11,hacking,ctf,tryhackme,writeup learn hacking, hackthebox, hack the box"
@@ -153,7 +153,7 @@ menu_icons:
 # Schemes
 scheme: Muse
 # scheme: Mist
-#scheme: Pisces
+# scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -355,8 +355,8 @@ post_copyright:
 #   enabled: [true/false] - Replace with specific image
 #   image: url-of-image   - Images's url
 custom_logo:
-  enabled: false
-  image:
+  enabled: true
+  image: /assets/images/logo.png
 
 
 # Code Highlight theme
@@ -596,7 +596,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: true
+  enable: false
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -638,7 +638,7 @@ pace: true
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme: pace-theme-flash
 
 # Canvas-nest
 canvas_nest: false
@@ -709,7 +709,7 @@ vendors:
   # pace: //cdn.bootcss.com/pace/1.0.2/pace.min.js
   # pace_css: //cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css
   pace:
-  pace_css:
+  pace_css: https://cdn.bootcss.com/pace/1.0.2/themes/black/pace-theme-flash.min.css
 
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js

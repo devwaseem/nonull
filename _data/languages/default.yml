@@ -6,7 +6,7 @@ title:
   archives: Archives
   categories: Categories
   tags: Tags
-  about: About
+  about: Whoami
 
 author: Author
 
@@ -15,7 +15,7 @@ menu:
   archives: Archives
   categories: Categories
   tags: Tags
-  about: About
+  about: Whoami
   search: Search
   schedule: Schedule
   sitemap: Sitemap
@@ -88,7 +88,7 @@ cheers:
   great: Great
   excellent: Excellent
 
-keep_on: Keep on posting.
+keep_on: Will post more in future!.
 
 symbol:
   comma: ', '
