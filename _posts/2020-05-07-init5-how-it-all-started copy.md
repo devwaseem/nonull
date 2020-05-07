@@ -8,7 +8,7 @@ category:
 tags:
 - personal
 - about
-description: "This Article explains how i got introduced to <b><u>Programming</u></b> and stuffs <br> and where i am now in <b>2020</b>"
+description: "This Article explains how i got introduced to <b><u>Programming</u></b> and stuffs and where i am now in <b>2020</b>"
 ---
 
 My story coming soon....
