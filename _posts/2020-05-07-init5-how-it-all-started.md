@@ -1,6 +1,7 @@
 ---
 title: "Init 5: How it all Started"
 author: n0nu11
+layout: "post"
 published: false
 category:
 - personal
