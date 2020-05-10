@@ -7,7 +7,7 @@ category:
 - personal
 tags:
 - personal
-description: "This Article explains how i got introduced to <b>Computers, Kernels, Operating systems, Programming languages</b> and pretty much all the foundations that made me where i am now in <b>2020</b> by surfing through my history with the Time machine"
+description: "This Article explains how i got introduced to <b>Computers, Kernels, Operating systems, Programming languages</b> and pretty much all the foundations that made me where i am now in <b>2020</b>."
 ---
 ## Whoami
 
