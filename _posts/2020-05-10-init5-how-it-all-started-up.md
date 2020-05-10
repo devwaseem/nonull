@@ -7,7 +7,7 @@ category:
 - personal
 tags:
 - personal
-description: "This Article explains how i got introduced to <b>Computers, Kernels, Operating systems and Programming languages</b> and where i am now in <b>2020</b>"
+description: "This Article explains how i got introduced to <b>Computers, Kernels, Operating systems, Programming languages</b> and pretty much all the foundations that made me where i am now in <b>2020</b> by surfing through my history with the Time machine"
 ---
 ## Whoami
 
@@ -89,9 +89,35 @@ _Sad times. lets get going..._
 
 ![GOT](https://media.giphy.com/media/iwVHUKnyvZKEg/giphy.gif)
 
-Its Year 2015, 16 year old playing with android. Yeah i'm back to android after i messed up my iPhone. since then i had many android phones changed but in all that i did the same thing which is apart from rooting. This time i started playing with the [Android roms](https://en.wikipedia.org/wiki/List_of_custom_Android_distributions) (Android roms are just modified android os) and different kernels available for the specific device i had. Thats when i got introduced to `Linux`. I was a beginner and a windows user, so linux is scary as well as fun for the first time. Out of curiosity i learned [Bash Scripting](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) and made [Intelli Tweaks](https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308). Intelli tweaks is as the name suggests, Its tweaking script for rooted android phones which will buff your phone's performance.
+Its Year 2015, 16 year old playing with android. Yeah i'm back to android after i messed up my iPhone. since then i had many android phones changed but in every android phone that i ever owned i did the same thing which is far from rooting. This time i started playing with the [Android roms](https://en.wikipedia.org/wiki/List_of_custom_Android_distributions) (Android roms are just modified android os) and different [kernels](https://en.wikipedia.org/wiki/Kernel_(operating_system)), [bootloaders](https://en.wikipedia.org/wiki/Booting), recovery images,etc., available for the specific device i had. I would change the android rom as frequently as 2-3 per week just because it is fun to do. Basically i was addicted to that for a long time. I didn't want to stay there but i wanted to learn how the operating system works. Thats how i got introduced to [`Linux`](https://en.wikipedia.org/wiki/Linux). I was a beginner and a windows user, so linux is scary as well as fun for the first time. Out of curiosity i learned [Bash Scripting](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) and made [Intelli Tweaks](https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308).
 
+![Intelli tweaks](/assets/images/intelli_tweaks.png)
+![Intelli tweaks 2](/assets/images/intelli_tweaks_2.png)
+
+<a href="https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308" >Click here to check it out</a>
+
+**Intelli tweaks** is, as the name suggests, Its tweaking script for rooted android phones which will buff your phone's performance; You may have to take a look what it can do and make sure you read the comments too 😅. To be honest, i copied a few features from others and added to mine and made my tweaks look unique.
+
+_Thats the first ever **code/project** i ever wrote. **Proud Moment**_ 🎉
+
+<!-- ![proud](https://media.giphy.com/media/l0He0cVv8lGggpruo/giphy.gif) -->
+![proud](https://media.giphy.com/media/EbeugHT06pCr6/giphy.gif)
+
+_Its time!. Lets jump a year_
 
 ---
 
-## Programming and the computerland
+## Programming in computerland
+
+![alice in wonderland](https://media.giphy.com/media/38NNXN3e9ThTi/giphy.gif)
+
+We are in 2016. The year where it all actually started. Time to choose a major branch in my highschool. I'm a science lover so i had 2 choices: either take biology or computer science as major. i assumed that computer science major will be just a waste of time since i know the basics 🤨. why do i have to learn how to reinvent the wheel? when i already know how the wheel works?!. So i chose Biology branch.
+
+_Soon i've realised i made a mistake_
+
+_Another regretting moment..._
+
+![mistake](https://media.giphy.com/media/qUn01S2U4I46s/giphy.gif)
+
+
+To be continued....

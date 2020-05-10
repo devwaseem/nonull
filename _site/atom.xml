@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://0.0.0.0:8000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8000/" rel="alternate" type="text/html" /><updated>2020-05-10T20:57:57+05:30</updated><id>http://0.0.0.0:8000/atom.xml</id><title type="html">n0nu11</title><author><name>n0nu11</name></author><entry><title type="html">Init 5: How it all Started</title><link href="http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up/" rel="alternate" type="text/html" title="Init 5: How it all Started" /><published>2020-05-10T00:00:00+05:30</published><updated>2020-05-10T00:00:00+05:30</updated><id>http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up</id><content type="html" xml:base="http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up/">&lt;h2 id=&quot;whoami&quot;&gt;Whoami&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://0.0.0.0:8000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8000/" rel="alternate" type="text/html" /><updated>2020-05-10T22:26:01+05:30</updated><id>http://0.0.0.0:8000/atom.xml</id><title type="html">n0nu11</title><author><name>n0nu11</name></author><entry><title type="html">Init 5: How it all Started</title><link href="http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up/" rel="alternate" type="text/html" title="Init 5: How it all Started" /><published>2020-05-10T00:00:00+05:30</published><updated>2020-05-10T00:00:00+05:30</updated><id>http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up</id><content type="html" xml:base="http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up/">&lt;h2 id=&quot;whoami&quot;&gt;Whoami&lt;/h2&gt;
 
 &lt;p&gt;Hi, My name is &lt;strong&gt;Waseem Akram&lt;/strong&gt; a.k.a &lt;strong&gt;n0nu11&lt;/strong&gt;. I make web apps, mobile apps, hunt bugs and design a little bit of user interfaces.
 Well, I’m here to share you the wonderful but boring story of mine on how i got introduced to programming and making stuffs i like and much more. so Get ready with the time machine, because we are going to travel back and forth in time. Lets go way back in time.&lt;/p&gt;
@@ -85,8 +85,34 @@ Well, I’m here to share you the wonderful but boring story of mine on how i go
 
 &lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/iwVHUKnyvZKEg/giphy.gif&quot; alt=&quot;GOT&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Its Year 2015, 16 year old playing with android. Yeah i’m back to android after i messed up my iPhone. since then i had many android phones changed but in all that i did the same thing which is apart from rooting. This time i started playing with the &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_custom_Android_distributions&quot;&gt;Android roms&lt;/a&gt; (Android roms are just modified android os) and different kernels available for the specific device i had. Thats when i got introduced to &lt;code class=&quot;highlighter-rouge&quot;&gt;Linux&lt;/code&gt;. I was a beginner and a windows user, so linux is scary as well as fun for the first time. Out of curiosity i learned &lt;a href=&quot;https://en.wikipedia.org/wiki/Bash_(Unix_shell)&quot;&gt;Bash Scripting&lt;/a&gt; and made &lt;a href=&quot;https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308&quot;&gt;Intelli Tweaks&lt;/a&gt;. Intelli tweaks is as the name suggests, Its tweaking script for rooted android phones which will buff your phone’s performance.&lt;/p&gt;
+&lt;p&gt;Its Year 2015, 16 year old playing with android. Yeah i’m back to android after i messed up my iPhone. since then i had many android phones changed but in every android phone that i ever owned i did the same thing which is far from rooting. This time i started playing with the &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_custom_Android_distributions&quot;&gt;Android roms&lt;/a&gt; (Android roms are just modified android os) and different &lt;a href=&quot;https://en.wikipedia.org/wiki/Kernel_(operating_system)&quot;&gt;kernels&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Booting&quot;&gt;bootloaders&lt;/a&gt;, recovery images,etc., available for the specific device i had. I would change the android rom as frequently as 2-3 per week just because it is fun to do. Basically i was addicted to that for a long time. I didn’t want to stay there but i wanted to learn how the operating system works. Thats how i got introduced to &lt;a href=&quot;https://en.wikipedia.org/wiki/Linux&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Linux&lt;/code&gt;&lt;/a&gt;. I was a beginner and a windows user, so linux is scary as well as fun for the first time. Out of curiosity i learned &lt;a href=&quot;https://en.wikipedia.org/wiki/Bash_(Unix_shell)&quot;&gt;Bash Scripting&lt;/a&gt; and made &lt;a href=&quot;https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308&quot;&gt;Intelli Tweaks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/intelli_tweaks.png&quot; alt=&quot;Intelli tweaks&quot; /&gt;
+&lt;img src=&quot;/assets/images/intelli_tweaks_2.png&quot; alt=&quot;Intelli tweaks 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308&quot;&gt;Click here to check it out&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intelli tweaks&lt;/strong&gt; is, as the name suggests, Its tweaking script for rooted android phones which will buff your phone’s performance; You may have to take a look what it can do and make sure you read the comments too 😅. To be honest, i copied a few features from others and added to mine and made my tweaks look unique.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Thats the first ever &lt;strong&gt;code/project&lt;/strong&gt; i ever wrote. &lt;strong&gt;Proud Moment&lt;/strong&gt;&lt;/em&gt; 🎉&lt;/p&gt;
+
+&lt;!-- ![proud](https://media.giphy.com/media/l0He0cVv8lGggpruo/giphy.gif) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/EbeugHT06pCr6/giphy.gif&quot; alt=&quot;proud&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Its time!. Lets jump a year&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;programming-and-the-computerland&quot;&gt;Programming and the computerland&lt;/h2&gt;</content><author><name>n0nu11</name></author><category term="[&quot;personal&quot;]" /><category term="personal" /><summary type="html">Whoami</summary></entry></feed>
+&lt;h2 id=&quot;programming-in-computerland&quot;&gt;Programming in computerland&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/38NNXN3e9ThTi/giphy.gif&quot; alt=&quot;alice in wonderland&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We are in 2016. The year where it all actually started. Time to choose a major branch in my highschool. I’m a science lover so i had 2 choices: either take biology or computer science as major. i assumed that computer science major will be just a waste of time since i know the basics 🤨. why do i have to learn how to reinvent the wheel? when i already know how the wheel works?!. So i chose Biology branch.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Soon i’ve realised i made a mistake&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Another regretting moment…&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/qUn01S2U4I46s/giphy.gif&quot; alt=&quot;mistake&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To be continued….&lt;/p&gt;</content><author><name>n0nu11</name></author><category term="[&quot;personal&quot;]" /><category term="personal" /><summary type="html">Whoami</summary></entry></feed>
