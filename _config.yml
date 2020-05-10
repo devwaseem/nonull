@@ -3,6 +3,7 @@
 ## Docs: https://jekyllrb.com/docs/configuration/
 # ---------------------------------------------------------------
 host: 0.0.0.0
+port: 8000
 # Site
 title: n0nu11
 subtitle: 
@@ -32,7 +33,7 @@ paginate: 10
   #paginate_path: "/page:num/"
 
 # Handling Reading
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", "vendor"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", "vendor","_algolia_api_key"]
 
 # Separator
 #excerpt_separator: <!-- more -->
@@ -68,8 +69,6 @@ feed:
 ## Docs: https://help.github.com/articles/configuring-jekyll-plugins/
 plugins:
  - jemoji
- - jekyll-sitemap
- - jekyll-feed
 
 # ---------------------------------------------------------------
 # Site Information Settings
@@ -243,7 +242,7 @@ social_icons:
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-#avatar:
+avatar: /assets/images/waseem.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -585,13 +584,21 @@ calendar:
 
 # Algolia Search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 10
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}"
     hits_stats: "${hits} results found in ${time} ms"
+
+algolia: 
+  applicationID: 3B1EKV289D
+  apiKey: 61d1a631ee6de5f6dc145efe484b3b9e
+  indexName: prod_n0nu11
+  application_id: 3B1EKV289D
+  api_key: 61d1a631ee6de5f6dc145efe484b3b9e
+  index_name: prod_n0nu11
 
 
 # Local search

@@ -1,2 +1,5 @@
 # Local Netlify folder
 .netlify
+
+#api key
+_algolia_api_key

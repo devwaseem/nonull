@@ -1,3 +1,7 @@
 source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
+gem "jekyll", "~> 4.0.0"
+gem 'jemoji'
 #gem 'jekyll-admin', group: :jekyll_plugins
+group :jekyll_plugins do
+    gem 'algoliasearch-jekyll'
+  end

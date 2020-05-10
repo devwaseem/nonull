@@ -116,17 +116,14 @@
 
 
 
-<meta name="description" content="My personal Website">
 <meta name="keywords" content="n0nu11,hacking,ctf,tryhackme,writeup learn hacking, hackthebox, hack the box">
 <meta property="og:type" content="website">
 <meta property="og:title" content="n0nu11">
-<meta property="og:url" content="http://0.0.0.0:4000/categories/">
+<meta property="og:url" content="http://0.0.0.0:8000/categories/">
 <meta property="og:site_name" content="n0nu11">
-<meta property="og:description" content="My personal Website">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="n0nu11">
-<meta name="twitter:description" content="My personal Website">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -142,9 +139,9 @@
       author: 'Author'
     },
     algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
+      applicationID: '3B1EKV289D',
+      apiKey: '61d1a631ee6de5f6dc145efe484b3b9e',
+      indexName: 'prod_n0nu11',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
@@ -153,7 +150,7 @@
 
 
 
-  <link rel="canonical" href="http://0.0.0.0:4000/"/>
+  <link rel="canonical" href="http://0.0.0.0:8000/"/>
 
 
 
@@ -288,9 +285,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -337,7 +372,7 @@
       
       
       <a class="category-list-link" href="/category/#/personal">personal</a>
-      <span class="category-list-count">2</span>
+      <span class="category-list-count">1</span>
     </i>
     
   </ul>
@@ -376,7 +411,7 @@
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/assets/images/avatar.gif"
+               src="/assets/images/waseem.jpg"
                alt="n0nu11" />
           <p class="site-author-name" itemprop="name">n0nu11</p>
            
@@ -388,7 +423,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -410,7 +445,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -712,6 +747,19 @@
 
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/assets/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/assets/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/assets/js/src/algolia-search.js?v=5.1.1"></script>
 
 
 
