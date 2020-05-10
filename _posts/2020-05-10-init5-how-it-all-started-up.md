@@ -12,7 +12,7 @@ description: "This Article explains how i got introduced to <b>Computers, Kernel
 ## Whoami
 
 Hi, My name is __Waseem Akram__ a.k.a **n0nu11**. I make web apps, mobile apps, hunt bugs and design a little bit of user interfaces.
-Well, I'm here to share you the wonderful but boring story of mine on how i got introduced to programming and making stuffs i like and much more. so Get ready with the time machine, because we are going to travel back and forth in time. Lets go way back in time.
+Well, I'm here to share you the wonderful but boring story of mine on how i got introduced to programming and making stuffs i like and much more. So get ready with the time machine, because we are going to travel back and forth in time. Lets go way back in time.
 
 ![popcorn](https://media.giphy.com/media/tyqcJoNjNv0Fq/giphy.gif)
 
