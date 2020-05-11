@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up/</loc>
+<lastmod>2020-05-10T00:00:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:8000/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8000/archives/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8000/tags/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8000/category/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8000/categories/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8000/tag/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8000/about/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8000/admin/</loc>
+<lastmod>2020-05-10T19:38:35+05:30</lastmod>
+</url>
+</urlset>
