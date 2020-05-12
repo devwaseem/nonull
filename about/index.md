@@ -11,7 +11,7 @@ Hi, My name is __Waseem Akram__ a.k.a **n0nu11**. I make Web apps, Mobile apps, 
 *I wrote a post on how I got started with programming, you can read it [here](/personal/2020/05/12/init5-how-it-all-started/)*
 
 ## Social Media
-<br/>
+
 [<i class="fa fa-envelope"></i> Email](mailto:root@n0nu11.tech) <br/>
 [<i class="fa fa-github"></i> Github](https://github.com/devwaseem) <br/>
 [<i class="fa fa-twitter"></i> Twitter](https://twitter.com/iamwaseem99)<br/>
@@ -36,7 +36,7 @@ Hi, My name is __Waseem Akram__ a.k.a **n0nu11**. I make Web apps, Mobile apps, 
 
 
 ## Projects
-<br/>
+
 *The source code for my projects are avaialble in [<i class="fa fa-github"></i> Github](https://github.com/devwaseem)*
 
 ### Klip Kutter
