@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://0.0.0.0:8000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8000/" rel="alternate" type="text/html" /><updated>2020-05-12T16:02:59+05:30</updated><id>http://0.0.0.0:8000/atom.xml</id><title type="html">n0nu11</title><author><name>n0nu11</name></author><entry><title type="html">Init 5: How it all Started</title><link href="http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up/" rel="alternate" type="text/html" title="Init 5: How it all Started" /><published>2020-05-10T00:00:00+05:30</published><updated>2020-05-10T00:00:00+05:30</updated><id>http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up</id><content type="html" xml:base="http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up/">&lt;h2 id=&quot;whoami&quot;&gt;Whoami&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://0.0.0.0:8000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8000/" rel="alternate" type="text/html" /><updated>2020-05-12T16:13:46+05:30</updated><id>http://0.0.0.0:8000/atom.xml</id><title type="html">n0nu11</title><author><name>n0nu11</name></author><entry><title type="html">Init 5: How it all Started</title><link href="http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up/" rel="alternate" type="text/html" title="Init 5: How it all Started" /><published>2020-05-10T00:00:00+05:30</published><updated>2020-05-10T00:00:00+05:30</updated><id>http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up</id><content type="html" xml:base="http://0.0.0.0:8000/personal/2020/05/10/init5-how-it-all-started-up/">&lt;h2 id=&quot;whoami&quot;&gt;Whoami&lt;/h2&gt;
 
 &lt;p&gt;Hi, My name is &lt;strong&gt;Waseem Akram&lt;/strong&gt; a.k.a &lt;strong&gt;n0nu11&lt;/strong&gt;. I make web apps, mobile apps, hunt bugs, and design a little bit of user interfaces.
 Well, I’m here to share with you the wonderful but boring story of mine on how I got introduced to programming and making stuffs I like and much more. So get ready with the time machine, because we are going to travel back and forth to important moments in time. Let us go way back in time.&lt;/p&gt;
@@ -107,7 +107,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 &lt;h2 id=&quot;oh-wait-i-was-able-to-c&quot;&gt;Oh wait, I was able to C&lt;/h2&gt;
 
-&lt;p&gt;We’re in 2015, the year where it all started. I am a biology student in my highschool. Why? coz I actually chose biology over computer science because I thought choosing CS will bore me and also I love biology. One day our biology teacher was on leave so we stayed back in the computer science class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me &lt;em&gt;” How are you able to answer all those questions? “&lt;/em&gt; (Honestly those were basic questions not rocket science). I answered &lt;em&gt;“Its basics and I feel computer science is too easy “&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;We’re in 2015, the year where it all started. I was a a biology student in my highschool. Why? coz I actually chose biology over computer science because I thought choosing CS will bore me and also I love biology. One day our biology teacher was on leave so we stayed back in the computer science class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me &lt;em&gt;” How are you able to answer all those questions? “&lt;/em&gt; (Honestly those were basic questions not rocket science). I answered &lt;em&gt;“Its basics and I feel computer science is too easy “&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;One guy out of rage 😤 came to me and made a &lt;strong&gt;dare&lt;/strong&gt; asking me to compile a &lt;strong&gt;C program&lt;/strong&gt;, &lt;em&gt;” I’m not asking you to run but just successfully compile a c program “&lt;/em&gt;  were his words.&lt;/p&gt;
 
@@ -157,7 +157,9 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 &lt;p&gt;I was able to learn Functions, Structures, and many more finally. Also this was my first ever biggest dumb program I wrote. It just finds the repeated character in a word that you enter.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Alert: Its 150+ lines long, you may have to scroll fast.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Alert: Its 150+ lines long, you may have to scroll fast.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;script src=&quot;https://gist.github.com/devwaseem/614aa4ffb4dc965d6418422968c34c1d.js&quot;&gt;&lt;/script&gt;
 
@@ -301,23 +303,23 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 &lt;p&gt;I’ll answer a few questions that I frequently get from a lot of people I met.&lt;/p&gt;
 
-&lt;h4 id=&quot;how-to-start-learning-or-get-into-the-programming-field-&quot;&gt;How to start learning or get into the programming field ?&lt;/h4&gt;
+&lt;h4 id=&quot;how-to-start-learning-or-get-into-the-programming-field&quot;&gt;How to start learning or get into the programming field?&lt;/h4&gt;
 
 &lt;p&gt;&lt;em&gt;Start with the basics. Go with basic C programming or Python first. &lt;strong&gt;Understanding&lt;/strong&gt; what is what is most &lt;strong&gt;important&lt;/strong&gt; than completing the programming language.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;how-to-learn-and-make-softwares-in-a-week-&quot;&gt;How to learn and make softwares in a week ?&lt;/h4&gt;
+&lt;h4 id=&quot;how-to-learn-and-make-software-in-a-week&quot;&gt;How to learn and make software in a week?&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;Depends on how much you put effort. If you are an experienced programmer already, then you could make things in a week. If you are beginner then take it slow, set goals complete it in tolerable time. Its not the end of the world. Isn’t it?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Depends on how much you put effort. If you are an experienced programmer already, then you could make things in a week. If you are a beginner then take it slow, set goals complete it intolerable time. It’s not the end of the world. Isn’t it?&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;how-many-programming-languages-do-you-know-&quot;&gt;How many programming languages do you know ?&lt;/h4&gt;
+&lt;h4 id=&quot;how-many-programming-languages-do-you-know&quot;&gt;How many programming languages do you know?&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;I know a quite few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript, Go lang, Rust.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I know a quite few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript, Go lang.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;do-you-code-for-247-&quot;&gt;Do you code for 24/7 ?&lt;/h4&gt;
+&lt;h4 id=&quot;do-you-code-for-247&quot;&gt;Do you code for 24/7?&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;No! Not at all. I take my breaks, I code maximum for about 8 hours, rest of the day i enjoy games, movies and memes.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;No! Not at all. I take my breaks, I code maximum for about 8 hours, the rest of the day I enjoy games, movies and memes.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;suggest-me-some-platform-to-learn-programming-on-my-own-&quot;&gt;Suggest me some platform to learn Programming on my own ?&lt;/h4&gt;
+&lt;h4 id=&quot;suggest-me-some-platform-to-learn-programming-on-my-own&quot;&gt;Suggest me some platform to learn Programming on my own?&lt;/h4&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;em&gt;&lt;a href=&quot;https://www.youtube.com/&quot;&gt;Youtube&lt;/a&gt; (Where i learned most)&lt;/em&gt;&lt;/li&gt;
@@ -330,23 +332,23 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 &lt;p&gt;&lt;em&gt;(Links provided, just click to take you there.)&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;how-many-days-does-it-take-to-learn-one-programming-language-&quot;&gt;How many days does it take to learn one programming language ?&lt;/h4&gt;
+&lt;h4 id=&quot;how-many-days-does-it-take-to-learn-one-programming-language&quot;&gt;How many days does it take to learn one programming language?&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;Depends on your understanding and effort. Take me for example, i know the basics and concepts, so all it takes for me is a day or 2, because the the base concepts are same. Only syntax is different. If you are a beginner, it’ll take time.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Depends on your understanding and effort. Take me for example, I know the basics and concepts, so all it takes for me is a day or 2, because the base concepts are the same. Only syntax is different. If you are a beginner, it’ll take time.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;are-you-open-to-freelancing-coz-i-have-a-project-for-you-&quot;&gt;Are you open to freelancing coz i have a project for you ?&lt;/h4&gt;
+&lt;h4 id=&quot;are-you-open-to-freelancing-coz-i-have-a-project-for-you&quot;&gt;Are you open to freelancing coz I have a project for you?&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;I’m not providing freelance service anymore. If i’m up for it, ill update it on my social media. follow me for updates.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I’m not providing freelance service anymore. If I’m up for it, ill update it on my social media. follow me for updates.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;how-can-i-contact-you-&quot;&gt;How can i contact you ?&lt;/h4&gt;
+&lt;h4 id=&quot;how-can-i-contact-you&quot;&gt;How can I contact you?&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;You can drop a email at root@n0nu11.tech, message me in instagram, tweet/mention me in twitter.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;You can drop an email at root@n0nu11.tech, message me in Instagram, tweet/mention me in twitter.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;what-kind-of-music-do-you-hear-while-programming-&quot;&gt;What kind of music do you hear while programming ?&lt;/h4&gt;
+&lt;h4 id=&quot;what-kind-of-music-do-you-hear-while-programming&quot;&gt;What kind of music do you hear while programming?&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;Depends, If i am writing a new program i’ll hear beats, high bass, EDM. If i’m debugging i’ll go with pop. Totally depends on my mood.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Depends, If I am writing a new program I’ll hear beats, high bass, EDM. If I’m debugging I’ll go with pop music. Totally depends on my mood.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;inrovert-or-extrovert-&quot;&gt;Inrovert or Extrovert ?&lt;/h4&gt;
+&lt;h4 id=&quot;introvert-or-extrovert&quot;&gt;Introvert or Extrovert?&lt;/h4&gt;
 
 &lt;p&gt;&lt;em&gt;Ambivert&lt;/em&gt; 😌&lt;/p&gt;
 
@@ -354,7 +356,7 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 &lt;h2 id=&quot;before-you-leave&quot;&gt;Before you leave&lt;/h2&gt;
 
-&lt;p&gt;If you have any constructive criticism or any questions, please drop a email at root@n0nu11.tech or ping me in &lt;a href=&quot;https://instagram.com/dvlp.er&quot;&gt;instagram&lt;/a&gt;. I’ll be happy to hear your feedbacks.&lt;/p&gt;
+&lt;p&gt;If you have any constructive criticism or any questions, please drop an email at root@n0nu11.tech or ping me in &lt;a href=&quot;https://instagram.com/dvlp.er&quot;&gt;instagram&lt;/a&gt;. I’ll be happy to hear your feedback.&lt;/p&gt;
 
 &lt;p&gt;Follow me on  &lt;a href=&quot;https://github.com/devwaseem&quot;&gt; &lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt; Github&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/iamwaseem99&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt; Twitter&lt;/a&gt;, &lt;a href=&quot;https://www.instagram.com/dvlp.er/&quot;&gt;&lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt; Instagram&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/dvlprwaseem&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt; Facebook&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/devwaseem/&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt; LinkedIn&lt;/a&gt;.&lt;/p&gt;
 

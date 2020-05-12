@@ -114,7 +114,7 @@ _Whatever! Its time!. Let us jump a year_
 
 ## Oh wait, I was able to C
 
-We're in 2015, the year where it all started. I am a biology student in my highschool. Why? coz I actually chose biology over computer science because I thought choosing CS will bore me and also I love biology. One day our biology teacher was on leave so we stayed back in the computer science class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me _" How are you able to answer all those questions? "_ (Honestly those were basic questions not rocket science). I answered _"Its basics and I feel computer science is too easy "_.
+We're in 2015, the year where it all started. I was a a biology student in my highschool. Why? coz I actually chose biology over computer science because I thought choosing CS will bore me and also I love biology. One day our biology teacher was on leave so we stayed back in the computer science class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me _" How are you able to answer all those questions? "_ (Honestly those were basic questions not rocket science). I answered _"Its basics and I feel computer science is too easy "_.
 
 One guy out of rage 😤 came to me and made a **dare** asking me to compile a **C program**, *" I'm not asking you to run but just successfully compile a c program "*  were his words.
 
@@ -165,7 +165,7 @@ It is early 2016 now. I'm on summer vacations after those long hectic board exam
 
 I was able to learn Functions, Structures, and many more finally. Also this was my first ever biggest dumb program I wrote. It just finds the repeated character in a word that you enter.
 
-_Alert: Its 150+ lines long, you may have to scroll fast._
+> _Alert: Its 150+ lines long, you may have to scroll fast._
 
 <script src="https://gist.github.com/devwaseem/614aa4ffb4dc965d6418422968c34c1d.js"></script>
 
@@ -310,23 +310,23 @@ I've started this blog because I want to seed back the knowledge to the communit
 
 I'll answer a few questions that I frequently get from a lot of people I met.
 
-#### How to start learning or get into the programming field ?
+#### How to start learning or get into the programming field?
 
 _Start with the basics. Go with basic C programming or Python first. **Understanding** what is what is most **important** than completing the programming language._
 
-#### How to learn and make softwares in a week ?
+#### How to learn and make software in a week?
 
-*Depends on how much you put effort. If you are an experienced programmer already, then you could make things in a week. If you are beginner then take it slow, set goals complete it in tolerable time. Its not the end of the world. Isn't it?*
+*Depends on how much you put effort. If you are an experienced programmer already, then you could make things in a week. If you are a beginner then take it slow, set goals complete it intolerable time. It's not the end of the world. Isn't it?*
 
-#### How many programming languages do you know ?
+#### How many programming languages do you know?
 
-*I know a quite few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript, Go lang, Rust.*
+*I know a quite few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript, Go lang.*
 
-#### Do you code for 24/7 ?
+#### Do you code for 24/7?
 
-*No! Not at all. I take my breaks, I code maximum for about 8 hours, rest of the day i enjoy games, movies and memes.*
+*No! Not at all. I take my breaks, I code maximum for about 8 hours, the rest of the day I enjoy games, movies and memes.*
 
-#### Suggest me some platform to learn Programming on my own ?
+#### Suggest me some platform to learn Programming on my own?
 
 + *[Youtube](https://www.youtube.com/) (Where i learned most)*
 + *[Sololearn](https://www.sololearn.com/)*
@@ -337,23 +337,23 @@ _Start with the basics. Go with basic C programming or Python first. **Understan
 
 *(Links provided, just click to take you there.)*
 
-#### How many days does it take to learn one programming language ?
+#### How many days does it take to learn one programming language?
 
-*Depends on your understanding and effort. Take me for example, i know the basics and concepts, so all it takes for me is a day or 2, because the the base concepts are same. Only syntax is different. If you are a beginner, it'll take time.*
+*Depends on your understanding and effort. Take me for example, I know the basics and concepts, so all it takes for me is a day or 2, because the base concepts are the same. Only syntax is different. If you are a beginner, it'll take time.*
 
-#### Are you open to freelancing coz i have a project for you ?
+#### Are you open to freelancing coz I have a project for you?
 
-*I'm not providing freelance service anymore. If i'm up for it, ill update it on my social media. follow me for updates.*
+*I'm not providing freelance service anymore. If I'm up for it, ill update it on my social media. follow me for updates.*
 
-#### How can i contact you ?
+#### How can I contact you?
 
-*You can drop a email at root@n0nu11.tech, message me in instagram, tweet/mention me in twitter.*
+*You can drop an email at root@n0nu11.tech, message me in Instagram, tweet/mention me in twitter.*
 
-#### What kind of music do you hear while programming ?
+#### What kind of music do you hear while programming?
 
-*Depends, If i am writing a new program i'll hear beats, high bass, EDM. If i'm debugging i'll go with pop. Totally depends on my mood.*
+*Depends, If I am writing a new program I'll hear beats, high bass, EDM. If I'm debugging I'll go with pop music. Totally depends on my mood.*
 
-#### Inrovert or Extrovert ?
+#### Introvert or Extrovert?
 
 *Ambivert* 😌
 
@@ -361,7 +361,7 @@ _Start with the basics. Go with basic C programming or Python first. **Understan
 
 ## Before you leave
 
-If you have any constructive criticism or any questions, please drop a email at root@n0nu11.tech or ping me in [instagram](https://instagram.com/dvlp.er). I'll be happy to hear your feedbacks.
+If you have any constructive criticism or any questions, please drop an email at root@n0nu11.tech or ping me in [instagram](https://instagram.com/dvlp.er). I'll be happy to hear your feedback.
 
 Follow me on  [ <i class="fa fa-github"></i> Github](https://github.com/devwaseem), [<i class="fa fa-twitter"></i> Twitter](https://twitter.com/iamwaseem99), [<i class="fa fa-instagram"></i> Instagram](https://www.instagram.com/dvlp.er/), [<i class="fa fa-facebook"></i> Facebook](https://www.facebook.com/dvlprwaseem), [<i class="fa fa-linkedin"></i> LinkedIn](https://www.linkedin.com/in/devwaseem/).
 

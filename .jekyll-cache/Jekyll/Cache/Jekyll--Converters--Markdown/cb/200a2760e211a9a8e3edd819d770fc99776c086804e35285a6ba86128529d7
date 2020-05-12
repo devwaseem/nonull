@@ -1,4 +1,4 @@
-I"vi<h2 id="whoami">Whoami</h2>
+I"�i<h2 id="whoami">Whoami</h2>
 
 <p>Hi, My name is <strong>Waseem Akram</strong> a.k.a <strong>n0nu11</strong>. I make web apps, mobile apps, hunt bugs, and design a little bit of user interfaces.
 Well, I’m here to share with you the wonderful but boring story of mine on how I got introduced to programming and making stuffs I like and much more. So get ready with the time machine, because we are going to travel back and forth to important moments in time. Let us go way back in time.</p>
@@ -107,7 +107,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 <h2 id="oh-wait-i-was-able-to-c">Oh wait, I was able to C</h2>
 
-<p>We’re in 2015, the year where it all started. I am a biology student in my highschool. Why? coz I actually chose biology over computer science because I thought choosing CS will bore me and also I love biology. One day our biology teacher was on leave so we stayed back in the computer science class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me <em>” How are you able to answer all those questions? “</em> (Honestly those were basic questions not rocket science). I answered <em>“Its basics and I feel computer science is too easy “</em>.</p>
+<p>We’re in 2015, the year where it all started. I was a a biology student in my highschool. Why? coz I actually chose biology over computer science because I thought choosing CS will bore me and also I love biology. One day our biology teacher was on leave so we stayed back in the computer science class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me <em>” How are you able to answer all those questions? “</em> (Honestly those were basic questions not rocket science). I answered <em>“Its basics and I feel computer science is too easy “</em>.</p>
 
 <p>One guy out of rage 😤 came to me and made a <strong>dare</strong> asking me to compile a <strong>C program</strong>, <em>” I’m not asking you to run but just successfully compile a c program “</em>  were his words.</p>
 
@@ -157,7 +157,9 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 <p>I was able to learn Functions, Structures, and many more finally. Also this was my first ever biggest dumb program I wrote. It just finds the repeated character in a word that you enter.</p>
 
-<p><em>Alert: Its 150+ lines long, you may have to scroll fast.</em></p>
+<blockquote>
+  <p><em>Alert: Its 150+ lines long, you may have to scroll fast.</em></p>
+</blockquote>
 
 <script src="https://gist.github.com/devwaseem/614aa4ffb4dc965d6418422968c34c1d.js"></script>
 
@@ -301,23 +303,23 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 <p>I’ll answer a few questions that I frequently get from a lot of people I met.</p>
 
-<h4 id="how-to-start-learning-or-get-into-the-programming-field-">How to start learning or get into the programming field ?</h4>
+<h4 id="how-to-start-learning-or-get-into-the-programming-field">How to start learning or get into the programming field?</h4>
 
 <p><em>Start with the basics. Go with basic C programming or Python first. <strong>Understanding</strong> what is what is most <strong>important</strong> than completing the programming language.</em></p>
 
-<h4 id="how-to-learn-and-make-softwares-in-a-week-">How to learn and make softwares in a week ?</h4>
+<h4 id="how-to-learn-and-make-software-in-a-week">How to learn and make software in a week?</h4>
 
-<p><em>Depends on how much you put effort. If you are an experienced programmer already, then you could make things in a week. If you are beginner then take it slow, set goals complete it in tolerable time. Its not the end of the world. Isn’t it?</em></p>
+<p><em>Depends on how much you put effort. If you are an experienced programmer already, then you could make things in a week. If you are a beginner then take it slow, set goals complete it intolerable time. It’s not the end of the world. Isn’t it?</em></p>
 
-<h4 id="how-many-programming-languages-do-you-know-">How many programming languages do you know ?</h4>
+<h4 id="how-many-programming-languages-do-you-know">How many programming languages do you know?</h4>
 
-<p><em>I know a quite few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript, Go lang, Rust.</em></p>
+<p><em>I know a quite few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript, Go lang.</em></p>
 
-<h4 id="do-you-code-for-247-">Do you code for 24/7 ?</h4>
+<h4 id="do-you-code-for-247">Do you code for 24/7?</h4>
 
-<p><em>No! Not at all. I take my breaks, I code maximum for about 8 hours, rest of the day i enjoy games, movies and memes.</em></p>
+<p><em>No! Not at all. I take my breaks, I code maximum for about 8 hours, the rest of the day I enjoy games, movies and memes.</em></p>
 
-<h4 id="suggest-me-some-platform-to-learn-programming-on-my-own-">Suggest me some platform to learn Programming on my own ?</h4>
+<h4 id="suggest-me-some-platform-to-learn-programming-on-my-own">Suggest me some platform to learn Programming on my own?</h4>
 
 <ul>
   <li><em><a href="https://www.youtube.com/">Youtube</a> (Where i learned most)</em></li>
@@ -330,23 +332,23 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 <p><em>(Links provided, just click to take you there.)</em></p>
 
-<h4 id="how-many-days-does-it-take-to-learn-one-programming-language-">How many days does it take to learn one programming language ?</h4>
+<h4 id="how-many-days-does-it-take-to-learn-one-programming-language">How many days does it take to learn one programming language?</h4>
 
-<p><em>Depends on your understanding and effort. Take me for example, i know the basics and concepts, so all it takes for me is a day or 2, because the the base concepts are same. Only syntax is different. If you are a beginner, it’ll take time.</em></p>
+<p><em>Depends on your understanding and effort. Take me for example, I know the basics and concepts, so all it takes for me is a day or 2, because the base concepts are the same. Only syntax is different. If you are a beginner, it’ll take time.</em></p>
 
-<h4 id="are-you-open-to-freelancing-coz-i-have-a-project-for-you-">Are you open to freelancing coz i have a project for you ?</h4>
+<h4 id="are-you-open-to-freelancing-coz-i-have-a-project-for-you">Are you open to freelancing coz I have a project for you?</h4>
 
-<p><em>I’m not providing freelance service anymore. If i’m up for it, ill update it on my social media. follow me for updates.</em></p>
+<p><em>I’m not providing freelance service anymore. If I’m up for it, ill update it on my social media. follow me for updates.</em></p>
 
-<h4 id="how-can-i-contact-you-">How can i contact you ?</h4>
+<h4 id="how-can-i-contact-you">How can I contact you?</h4>
 
-<p><em>You can drop a email at root@n0nu11.tech, message me in instagram, tweet/mention me in twitter.</em></p>
+<p><em>You can drop an email at root@n0nu11.tech, message me in Instagram, tweet/mention me in twitter.</em></p>
 
-<h4 id="what-kind-of-music-do-you-hear-while-programming-">What kind of music do you hear while programming ?</h4>
+<h4 id="what-kind-of-music-do-you-hear-while-programming">What kind of music do you hear while programming?</h4>
 
-<p><em>Depends, If i am writing a new program i’ll hear beats, high bass, EDM. If i’m debugging i’ll go with pop. Totally depends on my mood.</em></p>
+<p><em>Depends, If I am writing a new program I’ll hear beats, high bass, EDM. If I’m debugging I’ll go with pop music. Totally depends on my mood.</em></p>
 
-<h4 id="inrovert-or-extrovert-">Inrovert or Extrovert ?</h4>
+<h4 id="introvert-or-extrovert">Introvert or Extrovert?</h4>
 
 <p><em>Ambivert</em> 😌</p>
 
@@ -354,7 +356,7 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 <h2 id="before-you-leave">Before you leave</h2>
 
-<p>If you have any constructive criticism or any questions, please drop a email at root@n0nu11.tech or ping me in <a href="https://instagram.com/dvlp.er">instagram</a>. I’ll be happy to hear your feedbacks.</p>
+<p>If you have any constructive criticism or any questions, please drop an email at root@n0nu11.tech or ping me in <a href="https://instagram.com/dvlp.er">instagram</a>. I’ll be happy to hear your feedback.</p>
 
 <p>Follow me on  <a href="https://github.com/devwaseem"> <i class="fa fa-github"></i> Github</a>, <a href="https://twitter.com/iamwaseem99"><i class="fa fa-twitter"></i> Twitter</a>, <a href="https://www.instagram.com/dvlp.er/"><i class="fa fa-instagram"></i> Instagram</a>, <a href="https://www.facebook.com/dvlprwaseem"><i class="fa fa-facebook"></i> Facebook</a>, <a href="https://www.linkedin.com/in/devwaseem/"><i class="fa fa-linkedin"></i> LinkedIn</a>.</p>
 
