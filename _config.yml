@@ -82,7 +82,7 @@ plugins:
 favicon: /assets/images/logo.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "n0nu11,hacking,ctf,tryhackme,writeup learn hacking, hackthebox, hack the box, devwaseem, Waseem Akram"
+keywords: "n0nu11,hacking,ctf,tryhackme,writeup, learn hacking, hackthebox, hack the box, devwaseem, Waseem Akram, nonull,no null"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
