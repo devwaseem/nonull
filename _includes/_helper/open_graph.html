@@ -68,10 +68,15 @@
     <!--newline-->
   {% endif %}
 
-  {% for image in images %}
+  {% if page.image or site.image %}
+  <meta property="og:image" content="{{ page.image or site.image }}">
+  {% else %}
+    {% for image in images %}
     <meta property="og:image" content="{{ image }}">
     <!--newline-->
-  {% endfor %}
+    {% endfor %}
+  {% endif %}
+
 
   {% if updated %}
     <meta property="og:updated_time" content="{{ updated | date_to_xmlschema }}">
