@@ -1,9 +1,11 @@
-I"�i<h2 id="whoami">Whoami</h2>
+I"�j<h2 id="whoami">Whoami</h2>
 
 <p>Hi, My name is <strong>Waseem Akram</strong> a.k.a <strong>n0nu11</strong>. I make web apps, mobile apps, hunt bugs, and design a little bit of user interfaces.
-Well, I’m here to share with you the wonderful but boring story of mine on how I got introduced to programming and making stuffs I like and much more. So get ready with the time machine, because we are going to travel back and forth to important moments in time. Let us go way back in time.</p>
+Well, I’m here to share with you the wonderful but boring story of mine on how I got introduced to programming and making stuffs I like and much more. So get ready with the time machine, because we are going to travel back and forth to important moments in time.</p>
 
 <p><img src="https://media.giphy.com/media/tyqcJoNjNv0Fq/giphy.gif" alt="popcorn" /></p>
+
+<p><em>Let’s go back to my childhood</em></p>
 
 <hr />
 
@@ -23,7 +25,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 <p><img src="https://media.giphy.com/media/s5u4GijpxgG4M/giphy.gif" alt="geek" /></p>
 
-<p>We’re here in 2012. I’m now a 13-year-old calling myself a geek 😆, because that was the time I owned my first android phone, an old little Micromax touch phone. I’ve used phones before, obviously an android but that belongs to my parents so I didn’t have much freedom to explore and break things. When I got my phone, things started getting rigor. I’ve learned a lot about android, iPhones, their models, and specs. I started tweaking around the android and installing various launchers to customize it the way I want. One fine day, I got introduced to <a href="https://en.wikipedia.org/wiki/Rooting_(Android)">rooting</a> and you would’ve expect it. I Rooted my phone ignoring those scary warnings about the security issues and <a href="https://en.wikipedia.org/wiki/Brick_(electronics)">bricking</a> problems. Since then it changed the way I look at technology, How manufactures restrict users, and how rooting breaks out the restriction and allows freedom to customize it in kernel level. Also that was the first time I got introduced to the term <strong><code class="highlighter-rouge">Hacking</code></strong>. I installed a lot of tweaks, apps, and patched games, etc, I pretty much enjoyed the process of rooting, the thrill of rooting (because if I brick, all I had to do is throw it away or spend some lump money to fix which will never be an option for me) and the benefits I gained after rooting. Apart from geeky stuffs I did Photoshop, Video editing using <a href="https://en.wikipedia.org/wiki/Nero_Vision">nero vision</a>.</p>
+<p>We’re here in 2012. I’m now a 13-year-old calling myself a geek 😆, because that was the time I owned my first android phone, an old little Micromax touch phone. I’ve used phones before, obviously an android but that belongs to my parents so I didn’t have much freedom to explore and break things. When I got my phone, things started getting rigor. I’ve learned a lot about android, iPhones, their models, and specs. I started tweaking around the android and installing various launchers to customize it the way I want. One fine day, I got introduced to <a href="https://en.wikipedia.org/wiki/Rooting_(Android)">rooting</a> and you would’ve expect it. I rooted my phone ignoring those scary warnings about the security issues and <a href="https://en.wikipedia.org/wiki/Brick_(electronics)">bricking</a> problems. Since then it changed the way I look at technology. How manufactures restrict users, and how rooting breaks out the restriction and allows freedom to customize it in kernel level. Also that was the first time I got introduced to the term <strong><code class="highlighter-rouge">Hacking</code></strong>. I installed a lot of tweaks, apps, and patched games, etc, I pretty much enjoyed the process of rooting, the thrill of rooting (because if I brick, all I had to do is throw it away or spend some lump money to fix which will never be an option for me) and the benefits I gained after rooting. Apart from geeky stuffs I did Photoshop, Video editing using <a href="https://en.wikipedia.org/wiki/Nero_Vision">nero vision</a>.</p>
 
 <p><em>Lets leave. come on get in the time machine…</em></p>
 
@@ -46,11 +48,11 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
     <p>Need some points or money in games? no problem.</p>
   </li>
   <li>
-    <p>Download movies and music directly to iTunes? no problem.</p>
+    <p>Download movies and music directly to Apple Music and Movies app? no problem.</p>
   </li>
 </ul>
 
-<p>Jailbreak was like a buff for iPhone. Features were not just an imagination on those days. Then I got to know about <strong>SIRI</strong>. Who didn’t want a talking smart assistant on their phone? But Siri wasn’t natively available for iPhone 4. well let us install the SIRI using <a href="https://en.wikipedia.org/wiki/Cydia">cydia</a> (its a package manager where you can install jailbreak tweaks) then. Let me risk it, what could go wrong right? fingers crossed 🤞.</p>
+<p>Jailbreak was like a buff for iPhone. Features were not just an imagination on those days. Then I got to know about <strong>SIRI</strong>. Who didn’t want a talking smart assistant on their phone? But Siri wasn’t natively available for iPhone 4. Well, let us install the SIRI using <a href="https://en.wikipedia.org/wiki/Cydia">cydia</a> (its a package manager where you can install jailbreak tweaks) then. Let me risk it, what could go wrong right? fingers crossed 🤞.</p>
 
 <p><img src="https://media.giphy.com/media/l0NwNrl4BtDD7JCx2/giphy.gif" alt="fingers crossed" />
 <img src="https://media.giphy.com/media/3orieTfp1MeFLiBQR2/giphy.gif" alt="please please" /></p>
@@ -83,21 +85,21 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 <p><img src="https://media.giphy.com/media/iwVHUKnyvZKEg/giphy.gif" alt="GOT" /></p>
 
-<p>Its Year 2014, 16-year-old playing with android. Yeah I’m back to android after I messed up my iPhone. since then I had many android phones changed but in every android phone that I ever owned I did the same thing which is far from rooting. This time I started playing with the <a href="https://en.wikipedia.org/wiki/List_of_custom_Android_distributions">Android roms</a> (Android ROMs are just modified android os) and different <a href="https://en.wikipedia.org/wiki/Kernel_(operating_system)">kernels</a>, <a href="https://en.wikipedia.org/wiki/Booting">bootloaders</a>, recovery images,etc., available for the specific device I had. I would change the android rom as frequently as 2-3 per week just because it is fun to do. Basically, I was addicted to that for a long time. I didn’t want to stay there but I wanted to learn how the operating system works. That’s how I got introduced to <a href="https://en.wikipedia.org/wiki/Linux"><code class="highlighter-rouge">Linux</code></a>. I was a beginner and a windows user, so Linux is scary as well as fun for the first time. Out of curiosity i learned <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash Scripting</a> and made <a href="https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308">Intelli Tweaks</a>.</p>
+<p>Its Year 2014, A 16-year-old playing with android. Yeah I’m back to android after I messed up my iPhone. since then I had many android phones changed but in every android phone that I ever owned I did the same thing which is far from rooting. This time I started playing with the <a href="https://en.wikipedia.org/wiki/List_of_custom_Android_distributions">Android roms</a> (Android ROMs are just modified android os) and different <a href="https://en.wikipedia.org/wiki/Kernel_(operating_system)">kernels</a>, <a href="https://en.wikipedia.org/wiki/Booting">bootloaders</a>, recovery images,etc., available for the specific device I had. I would change the android rom as frequently as 2-3 per week just because it was fun to do. Basically, I was addicted to that for a long time. I didn’t want to stay there but I wanted to learn how the operating system works. That’s how I got introduced to <a href="https://en.wikipedia.org/wiki/Linux"><code class="highlighter-rouge">Linux</code></a>. I was a beginner and a windows user, so Linux is scary as well as fun for the first time. Out of curiosity i learned <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash Scripting</a> and made <a href="https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308">Intelli Tweaks</a>.</p>
 
 <p><img src="/assets/images/intelli_tweaks.png" alt="Intelli tweaks" />
 <img src="/assets/images/intelli_tweaks_2.png" alt="Intelli tweaks 2" /></p>
 
 <p><a href="https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308">Click here to check it out</a></p>
 
-<p><strong>Intelli tweaks</strong> is, as the name suggests, Its tweaking script for rooted android phones which will buff your phone’s performance; You may have to take a look at what it can do and make sure you read the comments too 😅. To be honest, I copied a few features from others and added to mine and made my tweaks look unique.</p>
+<p><strong>Intelli tweaks</strong>, as the name suggests, Its a tweaking script for rooted android phones which will buff your phone’s performance; You may have to take a look at what it can do and make sure you read the comments too 😅. To be honest, I copied a few features from others and added to mine and made my tweaks look unique.</p>
 
 <p><em>Thats the first-ever <strong>code/project</strong> I ever wrote. <strong>Proud Moment</strong></em> 🎉.</p>
 
 <!-- ![proud](https://media.giphy.com/media/l0He0cVv8lGggpruo/giphy.gif) -->
 <p><img src="https://media.giphy.com/media/EbeugHT06pCr6/giphy.gif" alt="proud" /></p>
 
-<p>I didn’t know what coding/programming or programming languages was back then. I was just doing everything out of curiosity by reading others works and guides online.</p>
+<p>I didn’t know much about coding/programming or programming languages was back then. I was just doing everything out of curiosity by reading others works and guides online.</p>
 
 <p>Sometime back then I also learned <code class="highlighter-rouge">Ethical Hacking</code>. Basic XSS, SQL Injections, Directory path traversals, and a quite few. One day an old Indian website caught my eye with an admin login page. Well my curiosity didn’t stop me to apply SQL injection and the next minute I was inside the website’s admin panel. So creepy and Scary. while I was looking around I accidentally clicked something that made the whole website go nuts and turn off. I didn’t wanna do anything but to come out of it. The second day I found that it is fixed. Turned out the first website I <strong>hacked</strong>. Another <strong>Proud Moment</strong> 🎉.</p>
 
@@ -107,7 +109,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 <h2 id="oh-wait-i-was-able-to-c">Oh wait, I was able to C</h2>
 
-<p>We’re in 2015, the year where it all started. I was a a biology student in my highschool. Why? coz I actually chose biology over computer science because I thought choosing CS will bore me and also I love biology. One day our biology teacher was on leave so we stayed back in the computer science class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me <em>” How are you able to answer all those questions? “</em> (Honestly those were basic questions not rocket science). I answered <em>“Its basics and I feel computer science is too easy “</em>.</p>
+<p>We’re in 2015, the year where it all started. I was a biology student in my highschool. Why? coz I actually chose biology over computer science because I thought choosing CS will bore me and also I love biology. One day our biology teacher was on leave so we stayed back in the computer science class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me <em>” How are you able to answer all those questions? “</em> (Honestly those were basic questions not rocket science). I answered <em>“Its basics and I feel computer science is too easy “</em>.</p>
 
 <p>One guy out of rage 😤 came to me and made a <strong>dare</strong> asking me to compile a <strong>C program</strong>, <em>” I’m not asking you to run but just successfully compile a c program “</em>  were his words.</p>
 
@@ -303,23 +305,23 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 <p>I’ll answer a few questions that I frequently get from a lot of people I met.</p>
 
-<h4 id="how-to-start-learning-or-get-into-the-programming-field-">How to start learning or get into the programming field ?</h4>
+<h4 id="how-to-start-learning-or-get-into-the-programming-field">How to start learning or get into the programming field?</h4>
 
 <p><em>Start with the basics. Go with basic C programming or Python first. <strong>Understanding</strong> what is what is most <strong>important</strong> than completing the programming language.</em></p>
 
-<h4 id="how-to-learn-and-make-softwares-in-a-week-">How to learn and make softwares in a week ?</h4>
+<h4 id="how-to-learn-and-make-software-in-a-week">How to learn and make software in a week?</h4>
 
-<p><em>Depends on how much you put effort. If you are an experienced programmer already, then you could make things in a week. If you are beginner then take it slow, set goals complete it in tolerable time. Its not the end of the world. Isn’t it?</em></p>
+<p><em>Depends on how much you put effort. If you are an experienced programmer already, then you could make things in a week. If you are a beginner then take it slow, set goals complete it intolerable time. It’s not the end of the world. Isn’t it?</em></p>
 
-<h4 id="how-many-programming-languages-do-you-know-">How many programming languages do you know ?</h4>
+<h4 id="how-many-programming-languages-do-you-know">How many programming languages do you know?</h4>
 
-<p><em>I know a quite few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript, Go lang.</em></p>
+<p><em>I know a quite few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript.</em></p>
 
-<h4 id="do-you-code-for-247-">Do you code for 24/7 ?</h4>
+<h4 id="do-you-code-for-247">Do you code for 24/7?</h4>
 
-<p><em>No! Not at all. I take my breaks, I code maximum for about 8 hours, rest of the day i enjoy games, movies and memes.</em></p>
+<p><em>No! Not at all. I take my breaks, I code maximum for about 8 hours, the rest of the day I enjoy games, movies and memes.</em></p>
 
-<h4 id="suggest-me-some-platform-to-learn-programming-on-my-own-">Suggest me some platform to learn Programming on my own ?</h4>
+<h4 id="suggest-me-some-platform-to-learn-programming-on-my-own">Suggest me some platform to learn Programming on my own?</h4>
 
 <ul>
   <li><em><a href="https://www.youtube.com/">Youtube</a> (Where i learned most)</em></li>
@@ -332,31 +334,35 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 <p><em>(Links provided, just click to take you there.)</em></p>
 
-<h4 id="how-many-days-does-it-take-to-learn-one-programming-language-">How many days does it take to learn one programming language ?</h4>
+<h4 id="how-many-days-does-it-take-to-learn-one-programming-language">How many days does it take to learn one programming language?</h4>
 
-<p><em>Depends on your understanding and effort. Take me for example, i know the basics and concepts, so all it takes for me is a day or 2, because the the base concepts are same. Only syntax is different. If you are a beginner, it’ll take time.</em></p>
+<p><em>Depends on your understanding and effort. Take me for example, I know the basics and concepts, so all it takes for me is a day or 2, because the base concepts are the same. Only syntax is different. If you are a beginner, it’ll take time.</em></p>
 
-<h4 id="are-you-open-to-freelancing-coz-i-have-a-project-for-you-">Are you open to freelancing coz i have a project for you ?</h4>
+<h4 id="are-you-open-to-freelancing-coz-i-have-a-project-for-you">Are you open to freelancing coz I have a project for you?</h4>
 
-<p><em>I’m not providing freelance service anymore. If i’m up for it, ill update it on my social media. follow me for updates.</em></p>
+<p><em>I’m not providing freelance service anymore. If I’m up for it, ill update it on my social media. follow me for updates.</em></p>
 
-<h4 id="how-can-i-contact-you-">How can i contact you ?</h4>
+<h4 id="how-can-i-contact-you">How can I contact you?</h4>
 
-<p><em>You can drop a email at root@n0nu11.tech, message me in instagram, tweet/mention me in twitter.</em></p>
+<p><em>You can drop an email at root@n0nu11.tech, message me in Instagram, tweet/mention me in twitter.</em></p>
 
-<h4 id="what-kind-of-music-do-you-hear-while-programming-">What kind of music do you hear while programming ?</h4>
+<h4 id="what-kind-of-music-do-you-hear-while-programming">What kind of music do you hear while programming?</h4>
 
-<p><em>Depends, If i am writing a new program i’ll hear beats, high bass, EDM. If i’m debugging i’ll go with pop. Totally depends on my mood.</em></p>
+<p><em>Depends, If I am writing a new program I’ll hear beats, high bass, EDM. If I’m debugging I’ll go with pop music. Totally depends on my mood.</em></p>
 
-<h4 id="inrovert-or-extrovert-">Inrovert or Extrovert ?</h4>
+<h4 id="introvert-or-extrovert">Introvert or Extrovert?</h4>
 
 <p><em>Ambivert</em> 😌</p>
+
+<h4 id="did-you-explain-everything-happened-in-this-article">Did you explain everything happened in this article?</h4>
+
+<p><em>No, There’s a lot i missed for the sake of understanding and not making it too long. There are stories of projects, financial failures, and few job offerings that i didn’t include here.</em></p>
 
 <hr />
 
 <h2 id="before-you-leave">Before you leave</h2>
 
-<p>If you have any constructive criticism or any questions, please drop a email at root@n0nu11.tech or ping me in <a href="https://instagram.com/dvlp.er">instagram</a>. I’ll be happy to hear your feedbacks.</p>
+<p>If you have any constructive criticism or any questions, please drop an email at root@n0nu11.tech or ping me in <a href="https://instagram.com/dvlp.er">instagram</a>. I’ll be happy to hear your feedback.</p>
 
 <p>Follow me on  <a href="https://github.com/devwaseem"> <i class="fa fa-github"></i> Github</a>, <a href="https://twitter.com/iamwaseem99"><i class="fa fa-twitter"></i> Twitter</a>, <a href="https://www.instagram.com/dvlp.er/"><i class="fa fa-instagram"></i> Instagram</a>, <a href="https://www.facebook.com/dvlprwaseem"><i class="fa fa-facebook"></i> Facebook</a>, <a href="https://www.linkedin.com/in/devwaseem/"><i class="fa fa-linkedin"></i> LinkedIn</a>.</p>
 
