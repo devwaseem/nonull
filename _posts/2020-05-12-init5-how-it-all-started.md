@@ -4,7 +4,7 @@ author: n0nu11
 title: "Init 5: How it all Started"
 date: 2020-05-13T12:06:37.796Z
 published: true
-thumbnail: /assets/images/coding-wall.jpg
+image: /assets/images/coding-wall.jpg
 tags:
   - personal
 description: This Article explains how i got introduced to <b>Computers,
