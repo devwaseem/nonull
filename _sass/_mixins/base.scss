@@ -7,12 +7,18 @@
 @mixin mobile() {
   @media (max-width: 767px) {
     @content;
+    .algolia-pop-overlay {
+      display: none;
+    }
   }
 }
 
 @mixin tablet() {
   @media (min-width: 768px) and (max-width: 991px) {
     @content;
+    .algolia-pop-overlay {
+      display: none;
+    }
   }
 }
 

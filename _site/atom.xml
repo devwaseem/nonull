@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://0.0.0.0:8000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8000/" rel="alternate" type="text/html" /><updated>2020-05-12T22:39:51+05:30</updated><id>http://0.0.0.0:8000/atom.xml</id><title type="html">n0nu11</title><author><name>n0nu11</name></author><entry><title type="html">Init 5: How it all Started</title><link href="http://0.0.0.0:8000/personal/2020/05/12/init5-how-it-all-started/" rel="alternate" type="text/html" title="Init 5: How it all Started" /><published>2020-05-12T00:00:00+05:30</published><updated>2020-05-12T00:00:00+05:30</updated><id>http://0.0.0.0:8000/personal/2020/05/12/init5-how-it-all-started</id><content type="html" xml:base="http://0.0.0.0:8000/personal/2020/05/12/init5-how-it-all-started/">&lt;h2 id=&quot;whoami&quot;&gt;Whoami&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://0.0.0.0:8000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8000/" rel="alternate" type="text/html" /><updated>2020-05-13T18:15:28+05:30</updated><id>http://0.0.0.0:8000/atom.xml</id><title type="html">n0nu11</title><author><name>n0nu11</name></author><entry><title type="html">Init 5: How it all started</title><link href="http://0.0.0.0:8000/personal/2020/05/13/init5-how-it-all-started/" rel="alternate" type="text/html" title="Init 5: How it all started" /><published>2020-05-13T17:36:37+05:30</published><updated>2020-05-13T17:36:37+05:30</updated><id>http://0.0.0.0:8000/personal/2020/05/13/init5-how-it-all-started</id><content type="html" xml:base="http://0.0.0.0:8000/personal/2020/05/13/init5-how-it-all-started/">&lt;h2 id=&quot;whoami&quot;&gt;Whoami&lt;/h2&gt;
 
 &lt;p&gt;Hi, My name is &lt;strong&gt;Waseem Akram&lt;/strong&gt; a.k.a &lt;strong&gt;n0nu11&lt;/strong&gt;. I make web apps, mobile apps, hunt bugs, and design a little bit of User Interfaces.
 Well, I’m here to share with you the wonderful but boring story of mine on how I got introduced to programming and making stuffs I like and much more. So get ready with the time machine, because we are going to travel back and forth to important moments in time.&lt;/p&gt;
@@ -13,7 +13,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 &lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/kxAX99ncvbPk4/giphy.gif&quot; alt=&quot;time machine&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I’ve been a computer enthusiast since my childhood. I like to play and break computers, explore the unknown realm of the computer world. Since then I’ve been curious how these magic boxes (computers) works. But a bummer, all I had is a mediocre desktop with limited and bad internet connection (Internet wasn’t that famous those days). I started learning how basic components like printers, scanners, modems, etc,. works. Also, I broke a lot of things from software (Operating systems by misconfiguration) to hardware in the way of exploration. Thanks to my dad for getting it fixed every time.&lt;/p&gt;
+&lt;p&gt;I have been a computer enthusiast since my childhood. I like to play and break computers, explore the unknown realm of the computer world. Since then I have been curious how these magic boxes (computers) works. But a bummer, all I had is a mediocre desktop with limited and bad internet connection (internet wasn’t that famous those days). I started learning how basic components like printers, scanners, modems, etc,. works. Also, I broke a lot of things from software (operating systems by misconfiguration) to hardware in the way of exploration. Thanks to my dad for getting it fixed every time.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Nothing interesting here. let us go a little forward in time now.&lt;/em&gt;&lt;/p&gt;
 
@@ -25,7 +25,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 &lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/s5u4GijpxgG4M/giphy.gif&quot; alt=&quot;geek&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;We’re here in 2012. I’m now a 13-year-old calling myself a geek 😆, because that was the time I owned my first android phone, an old little Micromax touch phone. I’ve used phones before, obviously an android but that belongs to my parents so I didn’t have much freedom to explore and break things. When I got my phone, things started getting rigor. I’ve learned a lot about android, iPhones, their models, and specs. I started tweaking around the android and installing various launchers to customize it the way I want. One fine day, I got introduced to &lt;a href=&quot;https://en.wikipedia.org/wiki/Rooting_(Android)&quot;&gt;rooting&lt;/a&gt; and you would’ve expect it. I rooted my phone ignoring those scary warnings about the security issues and &lt;a href=&quot;https://en.wikipedia.org/wiki/Brick_(electronics)&quot;&gt;bricking&lt;/a&gt; problems. Since then it changed the way I look at technology. How manufactures restrict users, and how rooting breaks out the restriction and allows freedom to customize it in kernel level. Also that was the first time I got introduced to the term &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Hacking&lt;/code&gt;&lt;/strong&gt;. I installed a lot of tweaks, apps, and patched games, etc, I pretty much enjoyed the process of rooting, the thrill of rooting (because if I brick, all I had to do is throw it away or spend some lump money to fix which will never be an option for me) and the benefits I gained after rooting. Apart from geeky stuffs I did Photoshop, Video editing using &lt;a href=&quot;https://en.wikipedia.org/wiki/Nero_Vision&quot;&gt;nero vision&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We’re here in 2012. I’m now a 13-year-old calling myself a geek 😆, because that was the time I owned my first Android phone, an old little Micromax touch phone. I have used phones before, obviously an Android but that belongs to my parents so I didn’t have much freedom to explore and break things. When I got my phone, things started getting rigor. I have learned a lot about Android, iPhones, their models, and specs. I started tweaking around the Android and installing various launchers to customize it the way I want. One fine day, I got introduced to &lt;a href=&quot;https://en.wikipedia.org/wiki/Rooting_(Android)&quot;&gt;rooting&lt;/a&gt; and you would’ve expect it. I rooted my phone ignoring those scary warnings about the security issues and &lt;a href=&quot;https://en.wikipedia.org/wiki/Brick_(electronics)&quot;&gt;bricking&lt;/a&gt; problems. Since then it changed the way I look at technology. How manufactures restrict users, and how rooting breaks out the restriction and allows freedom to customize it in kernel level. Also that was the first time I got introduced to the term &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Hacking&lt;/code&gt;&lt;/strong&gt;. I installed a lot of tweaks, apps, and patched games, etc, I pretty much enjoyed the process and the thrill of rooting (because if I brick, all I had to do is throw it away or spend some lump money to fix which will never be an option for me) and the benefits I gained after rooting. Apart from geeky stuffs I did Photoshop, Video editing using &lt;a href=&quot;https://en.wikipedia.org/wiki/Nero_Vision&quot;&gt;nero vision&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Lets leave. come on get in the time machine…&lt;/em&gt;&lt;/p&gt;
 
@@ -39,7 +39,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;There wasn’t a Bluetooth file transfer feature in the iPhone. Installed a tweak, Got it.&lt;/p&gt;
+    &lt;p&gt;There wasn’t a bluetooth file transfer feature in the iPhone. Installed a tweak, got it.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;No file manager? no problem.&lt;/p&gt;
@@ -85,14 +85,14 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 &lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/iwVHUKnyvZKEg/giphy.gif&quot; alt=&quot;GOT&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Its Year 2014, A 16-year-old playing with android. Yeah I’m back to android after I messed up my iPhone. since then I had many android phones changed but in every android phone that I ever owned I did the same thing which is far from rooting. This time I started playing with the &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_custom_Android_distributions&quot;&gt;Android roms&lt;/a&gt; (Android ROMs are just modified android os) and different &lt;a href=&quot;https://en.wikipedia.org/wiki/Kernel_(operating_system)&quot;&gt;kernels&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Booting&quot;&gt;bootloaders&lt;/a&gt;, recovery images,etc., available for the specific device I had. I would change the android rom as frequently as 2-3 per week just because it was fun to do. Basically, I was addicted to that for a long time. I didn’t want to stay there but I wanted to learn how the operating system works. That’s how I got introduced to &lt;a href=&quot;https://en.wikipedia.org/wiki/Linux&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Linux&lt;/code&gt;&lt;/a&gt;. I was a beginner and a windows user, so Linux is scary as well as fun for the first time. Out of curiosity i learned &lt;a href=&quot;https://en.wikipedia.org/wiki/Bash_(Unix_shell)&quot;&gt;Bash Scripting&lt;/a&gt; and made &lt;a href=&quot;https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308&quot;&gt;Intelli Tweaks&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Its Year 2014, A 16-year-old playing with Android. Yeah I’m back to Android after I messed up my iPhone. since then I had many Android phones changed but in every Android phone that I ever owned I did the same thing which is far from rooting. This time I started playing with the &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_custom_Android_distributions&quot;&gt;Android roms&lt;/a&gt; (Android ROMs are just modified Android os) and different &lt;a href=&quot;https://en.wikipedia.org/wiki/Kernel_(operating_system)&quot;&gt;kernels&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Booting&quot;&gt;bootloaders&lt;/a&gt;, recovery images,etc., available for the specific device I had. I would change the Android rom as frequently as 2-3 per week just because it was fun to do. Basically, I was addicted to that for a long time. I didn’t want to stay there but I wanted to learn how the operating system works. That’s how I got introduced to &lt;a href=&quot;https://en.wikipedia.org/wiki/Linux&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Linux&lt;/code&gt;&lt;/a&gt;. I was a beginner and a windows user, so Linux is scary as well as fun for the first time. Out of curiosity i learned &lt;a href=&quot;https://en.wikipedia.org/wiki/Bash_(Unix_shell)&quot;&gt;Bash Scripting&lt;/a&gt; and made &lt;a href=&quot;https://forum.xda-developers.com/Android/software-hacking/mod-intelli-tweaks-t3159308&quot;&gt;Intelli Tweaks&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/intelli_tweaks.png&quot; alt=&quot;Intelli tweaks&quot; /&gt;
 &lt;img src=&quot;/assets/images/intelli_tweaks_2.png&quot; alt=&quot;Intelli tweaks 2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308&quot;&gt;Click here to check it out&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://forum.xda-developers.com/Android/software-hacking/mod-intelli-tweaks-t3159308&quot;&gt;Click here to check it out&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Intelli tweaks&lt;/strong&gt;, as the name suggests, Its a tweaking script for rooted android phones which will buff your phone’s performance; You may have to take a look at what it can do and make sure you read the comments too 😅. To be honest, I copied a few features from others and added to mine and made my tweaks look unique.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Intelli tweaks&lt;/strong&gt;, as the name suggests, Its a tweaking script for rooted Android phones which will buff your phone’s performance; You may have to take a look at what it can do and make sure you read the comments too 😅. To be honest, I copied a few features from others and added to mine and made my tweaks look unique.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Thats the first-ever &lt;strong&gt;code/project&lt;/strong&gt; I ever wrote. &lt;strong&gt;Proud Moment&lt;/strong&gt;&lt;/em&gt; 🎉.&lt;/p&gt;
 
@@ -109,7 +109,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 &lt;h2 id=&quot;oh-wait-i-was-able-to-c&quot;&gt;Oh wait, I was able to C&lt;/h2&gt;
 
-&lt;p&gt;We’re in 2015, the year where it all started. I was a biology student in my highschool. Why? coz I actually chose biology over computer science because I thought choosing CS will bore me easily and also I love biology. Time to learn something new!. One day our biology teacher was on leave so we stayed back in the CS class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me &lt;em&gt;” How are you able to answer all those questions? “&lt;/em&gt; (Honestly those were basic questions not rocket science). I answered &lt;em&gt;“Its basics and I feel computer science is too easy “&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;We’re in 2015, the year where it all started. I was a biology student in my highschool. Why? because I actually chose biology over computer science because I thought choosing CS will bore me easily and also I love biology. Time to learn something new!. One day our biology teacher was on leave so we stayed back in the CS class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me &lt;em&gt;” How are you able to answer all those questions? “&lt;/em&gt; (Honestly those were basic questions not rocket science). I answered &lt;em&gt;“Its basics and I feel computer science is too easy “&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;A friend of mine, out of rage 😤 came to me and made a &lt;strong&gt;dare&lt;/strong&gt; asking me to compile a &lt;strong&gt;C program&lt;/strong&gt;, &lt;em&gt;” I’m not asking you to run but just successfully compile a c program “&lt;/em&gt;  were his words.&lt;/p&gt;
 
@@ -137,7 +137,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 &lt;p&gt;&lt;img src=&quot;/assets/images/compilerror.jpeg&quot; alt=&quot;error&quot; /&gt;
 &lt;img src=&quot;https://media.giphy.com/media/iJCo9daAP0xugHhhfb/giphy.gif&quot; alt=&quot;error&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;But going through the book again with what I’ve learned clearly helped me solve all those problems. It’s just the compiler is expecting me to write code that it can understand, not some gibberish like missing a semicolon or syntax errors.&lt;/p&gt;
+&lt;p&gt;But going through the book again with what I have learned clearly helped me solve all those problems. It’s just the compiler is expecting me to write code that it can understand, not some gibberish like missing a semicolon or syntax errors.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;so sweet of you compiler.&lt;/em&gt;&lt;/p&gt;
 
@@ -153,7 +153,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 &lt;h2 id=&quot;the-comeback&quot;&gt;The Comeback&lt;/h2&gt;
 
-&lt;p&gt;It is early 2016 now. I’m on summer vacations after those long hectic board exams. Bored and got nothing to do except playing games. One day I’ve decided to join a institution that can teach me C programming. That’s how I joined NIIT (National Institute of Information Technology) and opted for C, C++, Data Structures, and Java course ( bad for wallet obviously but it turned out to be the best decision of my life ).&lt;/p&gt;
+&lt;p&gt;It is early 2016 now. I’m on summer vacations after those long hectic board exams. Bored and got nothing to do except playing games. One day I have decided to join a institution that can teach me C programming. That’s how I joined NIIT (National Institute of Information Technology) and opted for C, C++, Data Structures, and Java course ( bad for wallet obviously but it turned out to be the best decision of my life ).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/elnu9VKIfTIzu/giphy.gif&quot; alt=&quot;back&quot; /&gt;&lt;/p&gt;
 
@@ -185,24 +185,24 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 &lt;p&gt;That’s when I really want to make use of my coding skill and started Googling. I found out I can make Android Apps since I know Java. Wait no more……&lt;/p&gt;
 
-&lt;p&gt;I started learning &lt;code class=&quot;highlighter-rouge&quot;&gt;Android Programming&lt;/code&gt; in &lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt; and I gradually started making little basic android apps.&lt;/p&gt;
+&lt;p&gt;I started learning &lt;code class=&quot;highlighter-rouge&quot;&gt;Android Programming&lt;/code&gt; in &lt;a href=&quot;https://www.udacity.com/&quot;&gt;Udacity&lt;/a&gt; and I gradually started making little basic Android apps.&lt;/p&gt;
 
 &lt;p&gt;I Moved to College a few months later. I always had a mind for solving problems. I saw a problem with the timetable. wait no more I made a Time Table App that can not only show you what class is right now but also remind you what’s next. Don’t mind the name please 😅.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/cserocks.png&quot; alt=&quot;cserocksapp&quot; /&gt;
 &lt;a href=&quot;https://github.com/devwaseem/CSECROCKZZ&quot;&gt;Click here to take a look&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;That was my first successful android project&lt;/em&gt; 🎉&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;That was my first successful Android project&lt;/em&gt; 🎉&lt;/p&gt;
 
-&lt;p&gt;Since then, I was always curious to learn the concepts in depth be as it android or any programming languages.&lt;/p&gt;
+&lt;p&gt;Since then, I was always curious to learn the concepts in depth be as it Android or any programming languages.&lt;/p&gt;
 
 &lt;p&gt;A few months later, a Hackathon was conducted in my college where I created an app for our college bus which will update live status and route of the bus and also alert the students when the bus is near 100-300 meters.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;(Unfortunately I lost the code, so I can’t able to link it here)&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;I’ve made a lot of apps since then, met a lot of people, made friends, helped a lot of people, made some money too 🤑.&lt;/p&gt;
+&lt;p&gt;I have made a lot of apps since then, met a lot of people, made friends, helped a lot of people, made some money too 🤑.&lt;/p&gt;
 
-&lt;p&gt;In 2017, I bought a Macbook Pro 2012, until then I used an old dell laptop with 2 gigs of ram. Imagine running an android studio in an &amp;lt; 2 Gb RAM. Its a nightmare.&lt;/p&gt;
+&lt;p&gt;In 2017, I bought a Macbook Pro 2012, until then I used an old dell laptop with 2 gigs of ram. Imagine running an Android studio in an &amp;lt; 2 Gb RAM. Its a nightmare.&lt;/p&gt;
 
 &lt;p&gt;The same year, I found a problem to solve it again. I found a basic thing that WhatsApp is missing. That is a video cutting feature. I see a lot of people want to upload videos or songs that are more than 30 seconds but unfortunately there isn’t a way unless they have to use a hard way by cutting the videos 30 seconds manually and upload the video as their stories in Whatsapp. Also there is no such app that can do it in the market.&lt;/p&gt;
 
@@ -221,7 +221,7 @@ Well, I’m here to share with you the wonderful but boring story of mine on how
 
 &lt;p&gt;The first iOS app I made was Venturious. It wasn’t my idea but a good friend/senior of mine &lt;a href=&quot;http://haashir.in/&quot;&gt;Haashir&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Second, I created Facepass, both for android and iOS. It is basically an app for anonymous messaging but powered with Facial Recognition.&lt;/p&gt;
+&lt;p&gt;Second, I created Facepass, both for Android and iOS. It is basically an app for anonymous messaging but powered with Facial Recognition.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/facepass.png&quot; alt=&quot;facepass&quot; /&gt;&lt;/p&gt;
 
@@ -246,7 +246,7 @@ Github: &lt;a href=&quot;https://github.com/devwaseem/FacePass&quot;&gt;https://
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/workshopui.png&quot; alt=&quot;workshop&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This is the website I’ve created for my college’s workshop event.&lt;/p&gt;
+&lt;p&gt;This is the website I have created for my college’s workshop event.&lt;/p&gt;
 
 &lt;p&gt;In 2019, I created my portfolio website for freelancing.&lt;/p&gt;
 
@@ -279,14 +279,14 @@ Github: &lt;a href=&quot;https://github.com/devwaseem/FacePass&quot;&gt;https://
 
 &lt;h2 id=&quot;present-and-infinity&quot;&gt;Present and Infinity&lt;/h2&gt;
 
-&lt;p&gt;It’s the year 2020, finally. This year I started learning &lt;code class=&quot;highlighter-rouge&quot;&gt;Ethical Hacking&lt;/code&gt; again. Why? you ask. I know I am good at programming at the same time I love learning in-depth and exploring how internals works. The term Hacker isn’t what I perceive as some guy doing bad things but as the guy who enjoys breaking and learning stuffs in depth. Basically I want to be a Hacker/security researcher coz I love providing security and breaking it. Even my college final year project is based on the security field. I’ve love breaking stuff and learning things in-depth as you could’ve known by now if you read all the above sections.&lt;/p&gt;
+&lt;p&gt;It’s the year 2020, finally. This year I started learning &lt;code class=&quot;highlighter-rouge&quot;&gt;Ethical Hacking&lt;/code&gt; again. Why? you ask. I know I am good at programming at the same time I love learning in-depth and exploring how internals works. The term Hacker isn’t what I perceive as some guy doing bad things but as the guy who enjoys breaking and learning stuffs in depth. Basically I want to be a Hacker/security researcher because I love providing security and breaking it. Even my college final year project is based on the security field. I have love breaking stuff and learning things in-depth as you could’ve known by now if you read all the above sections.&lt;/p&gt;
 
 &lt;p&gt;I’m currently learning and breaking stuffs in a safe way with various labs and platforms. One of the platforms is tryhackme which provides a lab setup to learn and break systems.&lt;/p&gt;
 
 &lt;script src=&quot;https://tryhackme.com/badge/20120&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;br /&gt;
-I’ve also made a simple script called AnonymousBash. Which as the name suggests, it will proxy all your bash commands by tunneling it through the TOR network. Makiing you &lt;strong&gt;Anonymous&lt;/strong&gt;&lt;/p&gt;
+I have also made a simple script called AnonymousBash. Which as the name suggests, it will proxy all your bash commands by tunneling it through the TOR network. Makiing you &lt;strong&gt;Anonymous&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/AnonymousBash.png&quot; alt=&quot;AnonymousBash&quot; /&gt;&lt;/p&gt;
 
@@ -294,7 +294,7 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 &lt;p&gt;I also play Capture the Flag in a while, which is a game for hackers or any cybersecurity enthusiast.&lt;/p&gt;
 
-&lt;p&gt;I’ve started this blog because I want to seed back the knowledge to the community. I’ll post or share my writeups, research, walkthroughs, tips &amp;amp; tricks, and much more…&lt;/p&gt;
+&lt;p&gt;I have started this blog because I want to seed back the knowledge to the community. I’ll post or share my writeups, research, walkthroughs, tips &amp;amp; tricks, and much more…&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;I think that’s it for now…&lt;/em&gt;
 &lt;img src=&quot;https://media.giphy.com/media/hpXxJ78YtpT0s/giphy.gif&quot; alt=&quot;bye&quot; /&gt;&lt;/p&gt;
@@ -315,7 +315,7 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 &lt;h4 id=&quot;how-many-programming-languages-do-you-know&quot;&gt;How many programming languages do you know?&lt;/h4&gt;
 
-&lt;p&gt;&lt;em&gt;I know a quite few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I know quite a few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;do-you-code-for-247&quot;&gt;Do you code for 24/7?&lt;/h4&gt;
 
@@ -338,7 +338,7 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 &lt;p&gt;&lt;em&gt;Depends on your understanding and effort. Take me for example, I know the basics and concepts, so all it takes for me is a day or 2, because the base concepts are the same. Only syntax is different. If you are a beginner, it’ll take time.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;are-you-open-to-freelancing-coz-i-have-a-project-for-you&quot;&gt;Are you open to freelancing coz I have a project for you?&lt;/h4&gt;
+&lt;h4 id=&quot;are-you-open-to-freelancing-because-i-have-a-project-for-you&quot;&gt;Are you open to freelancing because I have a project for you?&lt;/h4&gt;
 
 &lt;p&gt;&lt;em&gt;I’m not providing freelance service anymore. If I’m up for it, ill update it on my social media. follow me for updates.&lt;/em&gt;&lt;/p&gt;
 
@@ -366,4 +366,4 @@ I’ve also made a simple script called AnonymousBash. Which as the name suggest
 
 &lt;p&gt;Follow me on  &lt;a href=&quot;https://github.com/devwaseem&quot;&gt; &lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt; Github&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/iamwaseem99&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt; Twitter&lt;/a&gt;, &lt;a href=&quot;https://www.instagram.com/dvlp.er/&quot;&gt;&lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt; Instagram&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/dvlprwaseem&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt; Facebook&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/devwaseem/&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt; LinkedIn&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/jpoDZOyEg38F4cFFMi/giphy.gif&quot; alt=&quot;bye&quot; /&gt;&lt;/p&gt;</content><author><name>n0nu11</name></author><category term="[&quot;personal&quot;]" /><category term="personal" /><summary type="html">Whoami</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/jpoDZOyEg38F4cFFMi/giphy.gif&quot; alt=&quot;bye&quot; /&gt;&lt;/p&gt;</content><author><name>n0nu11</name></author><category term="[&quot;personal&quot;]" /><category term="personal" /><summary type="html">Whoami</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:8000/assets/images/coding-wall.jpg" /><media:content medium="image" url="http://0.0.0.0:8000/assets/images/coding-wall.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

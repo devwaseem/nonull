@@ -8,7 +8,7 @@ type: about
 <br/>
 Hi, My name is __Waseem Akram__ a.k.a **n0nu11**. I make Web apps, Mobile apps, Hunt bugs, and Design a little bit of User Interfaces. 
 
-*I wrote a post on how I got started with programming, you can read it [here](/personal/2020/05/12/init5-how-it-all-started/)*
+*I wrote a post on how I got started with programming, you can read it [here](/personal/2020/05/13/init5-how-it-all-started/)*
 
 ## Social Media
 

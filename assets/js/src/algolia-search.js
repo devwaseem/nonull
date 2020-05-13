@@ -66,9 +66,6 @@ $(document).ready(function () {
                         .replace(/\$\{time}/, data.processingTimeMS);
           return (
             stats +
-            '<span class="algolia-powered">' +
-            '  <img src="' + CONFIG.root + 'images/algolia_logo.svg" alt="Algolia" />' +
-            '</span>' +
             '<hr />'
           );
         }
