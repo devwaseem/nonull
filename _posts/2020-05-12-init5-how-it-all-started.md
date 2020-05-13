@@ -1,7 +1,7 @@
 ---
 layout: post
 author: n0nu11
-title: "Init 5: How it all Started"
+title: "Init 5: How it all started"
 date: 2020-05-13T12:06:37.796Z
 published: true
 image: /assets/images/coding-wall.jpg
@@ -29,7 +29,7 @@ Well, I'm here to share with you the wonderful but boring story of mine on how I
 
 ![time machine](https://media.giphy.com/media/kxAX99ncvbPk4/giphy.gif)
 
-I've been a computer enthusiast since my childhood. I like to play and break computers, explore the unknown realm of the computer world. Since then I've been curious how these magic boxes (computers) works. But a bummer, all I had is a mediocre desktop with limited and bad internet connection (Internet wasn't that famous those days). I started learning how basic components like printers, scanners, modems, etc,. works. Also, I broke a lot of things from software (Operating systems by misconfiguration) to hardware in the way of exploration. Thanks to my dad for getting it fixed every time.
+I have been a computer enthusiast since my childhood. I like to play and break computers, explore the unknown realm of the computer world. Since then I have been curious how these magic boxes (computers) works. But a bummer, all I had is a mediocre desktop with limited and bad internet connection (internet wasn't that famous those days). I started learning how basic components like printers, scanners, modems, etc,. works. Also, I broke a lot of things from software (operating systems by misconfiguration) to hardware in the way of exploration. Thanks to my dad for getting it fixed every time.
 
 _Nothing interesting here. let us go a little forward in time now._
 
@@ -41,7 +41,7 @@ _Nothing interesting here. let us go a little forward in time now._
 
 ![geek](https://media.giphy.com/media/s5u4GijpxgG4M/giphy.gif)
 
-We're here in 2012. I'm now a 13-year-old calling myself a geek 😆, because that was the time I owned my first android phone, an old little Micromax touch phone. I've used phones before, obviously an android but that belongs to my parents so I didn't have much freedom to explore and break things. When I got my phone, things started getting rigor. I've learned a lot about android, iPhones, their models, and specs. I started tweaking around the android and installing various launchers to customize it the way I want. One fine day, I got introduced to [rooting](https://en.wikipedia.org/wiki/Rooting_(Android)) and you would've expect it. I rooted my phone ignoring those scary warnings about the security issues and [bricking](https://en.wikipedia.org/wiki/Brick_(electronics)) problems. Since then it changed the way I look at technology. How manufactures restrict users, and how rooting breaks out the restriction and allows freedom to customize it in kernel level. Also that was the first time I got introduced to the term **`Hacking`**. I installed a lot of tweaks, apps, and patched games, etc, I pretty much enjoyed the process of rooting, the thrill of rooting (because if I brick, all I had to do is throw it away or spend some lump money to fix which will never be an option for me) and the benefits I gained after rooting. Apart from geeky stuffs I did Photoshop, Video editing using [nero vision](https://en.wikipedia.org/wiki/Nero_Vision).
+We're here in 2012. I'm now a 13-year-old calling myself a geek 😆, because that was the time I owned my first Android phone, an old little Micromax touch phone. I have used phones before, obviously an Android but that belongs to my parents so I didn't have much freedom to explore and break things. When I got my phone, things started getting rigor. I have learned a lot about Android, iPhones, their models, and specs. I started tweaking around the Android and installing various launchers to customize it the way I want. One fine day, I got introduced to [rooting](https://en.wikipedia.org/wiki/Rooting_(Android)) and you would've expect it. I rooted my phone ignoring those scary warnings about the security issues and [bricking](https://en.wikipedia.org/wiki/Brick_(electronics)) problems. Since then it changed the way I look at technology. How manufactures restrict users, and how rooting breaks out the restriction and allows freedom to customize it in kernel level. Also that was the first time I got introduced to the term **`Hacking`**. I installed a lot of tweaks, apps, and patched games, etc, I pretty much enjoyed the process and the thrill of rooting (because if I brick, all I had to do is throw it away or spend some lump money to fix which will never be an option for me) and the benefits I gained after rooting. Apart from geeky stuffs I did Photoshop, Video editing using [nero vision](https://en.wikipedia.org/wiki/Nero_Vision).
 
 _Lets leave. come on get in the time machine..._
 
@@ -53,7 +53,7 @@ _Lets leave. come on get in the time machine..._
 
 Huh! It is 2014. I'm 15 now, usual studies and exams bored me as always. One fine day, My dad bought me an iPhone 4, that's the first iPhone I had. That small incredible device is a masterpiece (Thanks to Steve jobs). The speed, smoothness, and camera quality blew my mind. I loved every moment with it. Well time passed, you would've guessed it by now, **ITS TIME TO JAILBREAK!!!** (Jailbreak is similar to rooting). Again I started enjoying the benefits and freedom of tweaking.
 
-- There wasn't a Bluetooth file transfer feature in the iPhone. Installed a tweak, Got it.
+- There wasn't a bluetooth file transfer feature in the iPhone. Installed a tweak, got it.
   
 - No file manager? no problem.
   
@@ -94,14 +94,14 @@ _Sad times. let us get going..._
 
 ![GOT](https://media.giphy.com/media/iwVHUKnyvZKEg/giphy.gif)
 
-Its Year 2014, A 16-year-old playing with android. Yeah I'm back to android after I messed up my iPhone. since then I had many android phones changed but in every android phone that I ever owned I did the same thing which is far from rooting. This time I started playing with the [Android roms](https://en.wikipedia.org/wiki/List_of_custom_Android_distributions) (Android ROMs are just modified android os) and different [kernels](https://en.wikipedia.org/wiki/Kernel_(operating_system)), [bootloaders](https://en.wikipedia.org/wiki/Booting), recovery images,etc., available for the specific device I had. I would change the android rom as frequently as 2-3 per week just because it was fun to do. Basically, I was addicted to that for a long time. I didn't want to stay there but I wanted to learn how the operating system works. That's how I got introduced to [`Linux`](https://en.wikipedia.org/wiki/Linux). I was a beginner and a windows user, so Linux is scary as well as fun for the first time. Out of curiosity i learned [Bash Scripting](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) and made [Intelli Tweaks](https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308).
+Its Year 2014, A 16-year-old playing with Android. Yeah I'm back to Android after I messed up my iPhone. since then I had many Android phones changed but in every Android phone that I ever owned I did the same thing which is far from rooting. This time I started playing with the [Android roms](https://en.wikipedia.org/wiki/List_of_custom_Android_distributions) (Android ROMs are just modified Android os) and different [kernels](https://en.wikipedia.org/wiki/Kernel_(operating_system)), [bootloaders](https://en.wikipedia.org/wiki/Booting), recovery images,etc., available for the specific device I had. I would change the Android rom as frequently as 2-3 per week just because it was fun to do. Basically, I was addicted to that for a long time. I didn't want to stay there but I wanted to learn how the operating system works. That's how I got introduced to [`Linux`](https://en.wikipedia.org/wiki/Linux). I was a beginner and a windows user, so Linux is scary as well as fun for the first time. Out of curiosity i learned [Bash Scripting](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) and made [Intelli Tweaks](https://forum.xda-developers.com/Android/software-hacking/mod-intelli-tweaks-t3159308).
 
 ![Intelli tweaks](/assets/images/intelli_tweaks.png)
 ![Intelli tweaks 2](/assets/images/intelli_tweaks_2.png)
 
-<a href="https://forum.xda-developers.com/android/software-hacking/mod-intelli-tweaks-t3159308" >Click here to check it out</a>
+<a href="https://forum.xda-developers.com/Android/software-hacking/mod-intelli-tweaks-t3159308" >Click here to check it out</a>
 
-**Intelli tweaks**, as the name suggests, Its a tweaking script for rooted android phones which will buff your phone's performance; You may have to take a look at what it can do and make sure you read the comments too 😅. To be honest, I copied a few features from others and added to mine and made my tweaks look unique.
+**Intelli tweaks**, as the name suggests, Its a tweaking script for rooted Android phones which will buff your phone's performance; You may have to take a look at what it can do and make sure you read the comments too 😅. To be honest, I copied a few features from others and added to mine and made my tweaks look unique.
 
 _Thats the first-ever **code/project** I ever wrote. **Proud Moment**_ 🎉.
 
@@ -118,7 +118,7 @@ _Whatever! Its time!. Let us jump a year_
 
 ## Oh wait, I was able to C
 
-We're in 2015, the year where it all started. I was a biology student in my highschool. Why? coz I actually chose biology over computer science because I thought choosing CS will bore me easily and also I love biology. Time to learn something new!. One day our biology teacher was on leave so we stayed back in the CS class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me _" How are you able to answer all those questions? "_ (Honestly those were basic questions not rocket science). I answered _"Its basics and I feel computer science is too easy "_.
+We're in 2015, the year where it all started. I was a biology student in my highschool. Why? because I actually chose biology over computer science because I thought choosing CS will bore me easily and also I love biology. Time to learn something new!. One day our biology teacher was on leave so we stayed back in the CS class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me _" How are you able to answer all those questions? "_ (Honestly those were basic questions not rocket science). I answered _"Its basics and I feel computer science is too easy "_.
 
 A friend of mine, out of rage 😤 came to me and made a **dare** asking me to compile a **C program**, *" I'm not asking you to run but just successfully compile a c program "*  were his words.
 
@@ -147,7 +147,7 @@ That was an easy program. I mean the easiest program ever. So I didn't have any 
 ![error](/assets/images/compilerror.jpeg)
 ![error](https://media.giphy.com/media/iJCo9daAP0xugHhhfb/giphy.gif)
 
- But going through the book again with what I've learned clearly helped me solve all those problems. It's just the compiler is expecting me to write code that it can understand, not some gibberish like missing a semicolon or syntax errors.
+ But going through the book again with what I have learned clearly helped me solve all those problems. It's just the compiler is expecting me to write code that it can understand, not some gibberish like missing a semicolon or syntax errors.
 
 _so sweet of you compiler._
 
@@ -163,7 +163,7 @@ _Back to time machine_
 
 ## The Comeback
 
-It is early 2016 now. I'm on summer vacations after those long hectic board exams. Bored and got nothing to do except playing games. One day I've decided to join a institution that can teach me C programming. That's how I joined NIIT (National Institute of Information Technology) and opted for C, C++, Data Structures, and Java course ( bad for wallet obviously but it turned out to be the best decision of my life ).
+It is early 2016 now. I'm on summer vacations after those long hectic board exams. Bored and got nothing to do except playing games. One day I have decided to join a institution that can teach me C programming. That's how I joined NIIT (National Institute of Information Technology) and opted for C, C++, Data Structures, and Java course ( bad for wallet obviously but it turned out to be the best decision of my life ).
 
 ![back](https://media.giphy.com/media/elnu9VKIfTIzu/giphy.gif)
 
@@ -193,24 +193,24 @@ _"Why am I learning all this? What can I potentially make something better out o
 
 That's when I really want to make use of my coding skill and started Googling. I found out I can make Android Apps since I know Java. Wait no more......
 
-I started learning `Android Programming` in [Udacity](https://www.udacity.com/) and I gradually started making little basic android apps.
+I started learning `Android Programming` in [Udacity](https://www.udacity.com/) and I gradually started making little basic Android apps.
 
 I Moved to College a few months later. I always had a mind for solving problems. I saw a problem with the timetable. wait no more I made a Time Table App that can not only show you what class is right now but also remind you what's next. Don't mind the name please 😅.
 
 ![cserocksapp](/assets/images/cserocks.png)
 [Click here to take a look](https://github.com/devwaseem/CSECROCKZZ)
 
-_That was my first successful android project_ 🎉
+_That was my first successful Android project_ 🎉
 
-Since then, I was always curious to learn the concepts in depth be as it android or any programming languages.
+Since then, I was always curious to learn the concepts in depth be as it Android or any programming languages.
 
 A few months later, a Hackathon was conducted in my college where I created an app for our college bus which will update live status and route of the bus and also alert the students when the bus is near 100-300 meters.
 
 _(Unfortunately I lost the code, so I can't able to link it here)_
 
-I've made a lot of apps since then, met a lot of people, made friends, helped a lot of people, made some money too 🤑.
+I have made a lot of apps since then, met a lot of people, made friends, helped a lot of people, made some money too 🤑.
 
-In 2017, I bought a Macbook Pro 2012, until then I used an old dell laptop with 2 gigs of ram. Imagine running an android studio in an < 2 Gb RAM. Its a nightmare.
+In 2017, I bought a Macbook Pro 2012, until then I used an old dell laptop with 2 gigs of ram. Imagine running an Android studio in an < 2 Gb RAM. Its a nightmare.
 
  The same year, I found a problem to solve it again. I found a basic thing that WhatsApp is missing. That is a video cutting feature. I see a lot of people want to upload videos or songs that are more than 30 seconds but unfortunately there isn't a way unless they have to use a hard way by cutting the videos 30 seconds manually and upload the video as their stories in Whatsapp. Also there is no such app that can do it in the market.
 
@@ -229,7 +229,7 @@ Then I got introduced to iOS App Development and learned `Swift` programming lan
 
 The first iOS app I made was Venturious. It wasn't my idea but a good friend/senior of mine [Haashir](http://haashir.in/).
 
-Second, I created Facepass, both for android and iOS. It is basically an app for anonymous messaging but powered with Facial Recognition.
+Second, I created Facepass, both for Android and iOS. It is basically an app for anonymous messaging but powered with Facial Recognition.
 
 ![facepass](/assets/images/facepass.png)
 
@@ -254,7 +254,7 @@ Some of the Web apps are:
 
 ![workshop](/assets/images/workshopui.png)
 
-This is the website I've created for my college's workshop event.
+This is the website I have created for my college's workshop event.
 
 In 2019, I created my portfolio website for freelancing.
 
@@ -287,14 +287,14 @@ _Phewww.. Feeling tired after a long journey? let's go back to 2020 finally_ �
 
 ## Present and Infinity
 
-It's the year 2020, finally. This year I started learning `Ethical Hacking` again. Why? you ask. I know I am good at programming at the same time I love learning in-depth and exploring how internals works. The term Hacker isn't what I perceive as some guy doing bad things but as the guy who enjoys breaking and learning stuffs in depth. Basically I want to be a Hacker/security researcher coz I love providing security and breaking it. Even my college final year project is based on the security field. I've love breaking stuff and learning things in-depth as you could've known by now if you read all the above sections.
+It's the year 2020, finally. This year I started learning `Ethical Hacking` again. Why? you ask. I know I am good at programming at the same time I love learning in-depth and exploring how internals works. The term Hacker isn't what I perceive as some guy doing bad things but as the guy who enjoys breaking and learning stuffs in depth. Basically I want to be a Hacker/security researcher because I love providing security and breaking it. Even my college final year project is based on the security field. I have love breaking stuff and learning things in-depth as you could've known by now if you read all the above sections.
 
 I'm currently learning and breaking stuffs in a safe way with various labs and platforms. One of the platforms is tryhackme which provides a lab setup to learn and break systems.
 
 <script src="https://tryhackme.com/badge/20120"></script>
 
 <br/>
-I've also made a simple script called AnonymousBash. Which as the name suggests, it will proxy all your bash commands by tunneling it through the TOR network. Makiing you **Anonymous**
+I have also made a simple script called AnonymousBash. Which as the name suggests, it will proxy all your bash commands by tunneling it through the TOR network. Makiing you **Anonymous**
 
 ![AnonymousBash](/assets/images/AnonymousBash.png)
 
@@ -303,7 +303,7 @@ Link: [https://github.com/devwaseem/AnonymousBash](https://github.com/devwaseem/
 
 I also play Capture the Flag in a while, which is a game for hackers or any cybersecurity enthusiast.
 
-I've started this blog because I want to seed back the knowledge to the community. I'll post or share my writeups, research, walkthroughs, tips & tricks, and much more...
+I have started this blog because I want to seed back the knowledge to the community. I'll post or share my writeups, research, walkthroughs, tips & tricks, and much more...
 
 *I think that's it for now...*
 ![bye](https://media.giphy.com/media/hpXxJ78YtpT0s/giphy.gif)
@@ -324,7 +324,7 @@ _Start with the basics. Go with basic C programming or Python first. **Understan
 
 #### How many programming languages do you know?
 
-*I know a quite few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript.*
+*I know quite a few. C, C++, Java, Python, Swift, Ruby, Go, Kotlin, PHP, Javascript.*
 
 #### Do you code for 24/7?
 
@@ -345,7 +345,7 @@ _Start with the basics. Go with basic C programming or Python first. **Understan
 
 *Depends on your understanding and effort. Take me for example, I know the basics and concepts, so all it takes for me is a day or 2, because the base concepts are the same. Only syntax is different. If you are a beginner, it'll take time.*
 
-#### Are you open to freelancing coz I have a project for you?
+#### Are you open to freelancing because I have a project for you?
 
 *I'm not providing freelance service anymore. If I'm up for it, ill update it on my social media. follow me for updates.*
 
