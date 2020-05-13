@@ -2,11 +2,11 @@
 layout: post
 author: n0nu11
 title: "Init 5: How it all started"
-date: 2020-05-13T12:06:37.796Z
+date: 2020-05-13T15:10:18.331Z
 published: true
-image: /assets/images/coding-wall.jpg
 tags:
   - personal
+image: /assets/images/coding-wall.jpg
 description: This Article explains how i got introduced to <b>Computers,
   Kernels, Operating systems, Programming languages</b> and pretty much all the
   foundations that made me where i am now in <b>2020</b>.
@@ -116,7 +116,7 @@ _Whatever! Its time!. Let us jump a year_
 
 ---
 
-## Oh wait, I was able to C
+## Oh wait, I can C
 
 We're in 2015, the year where it all started. I was a biology student in my highschool. Why? because I actually chose biology over computer science because I thought choosing CS will bore me easily and also I love biology. Time to learn something new!. One day our biology teacher was on leave so we stayed back in the CS class. That day was the quiz day for the CS class. I was sitting behind in the corner and answering almost all the questions correctly. CS teacher complimented me in front of the whole class and asked me _" How are you able to answer all those questions? "_ (Honestly those were basic questions not rocket science). I answered _"Its basics and I feel computer science is too easy "_.
 
