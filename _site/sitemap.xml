@@ -2,7 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://0.0.0.0:8000/personal/2020/05/13/init5-how-it-all-started/</loc>
-<lastmod>2020-05-13T17:36:37+05:30</lastmod>
+<lastmod>2020-05-13T20:40:18+05:30</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:8000/tryhackme/2020/05/15/pickle-rick/</loc>
+<lastmod>2020-05-15T20:40:18+05:30</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:8000/</loc>
