@@ -12,7 +12,7 @@ tags:
   - privilege escalation
   - directory scanning
 image: /assets/images/picklerick/picklerick2.jpg
-description: Pickle Rick is a Rick and Morty themed CTF challenge. It requires you to exploit the webserver and find **3** ingredients that will help Rick make his potion to transform himself back to human from a pickle. This is an easy challenge that can teach you directory scanning, command injection, Sudo privilege escalation, etc.
+description: Pickle Rick is a Rick and Morty themed CTF challenge. It requires you to exploit the webserver and find <b>3</b> ingredients that will help Rick make his potion to transform himself back to human from a pickle. This is an easy challenge that can teach you directory scanning, command injection, Sudo privilege escalation, etc.
 category:
   - tryhackme
 ---
