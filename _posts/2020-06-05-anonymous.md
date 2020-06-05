@@ -29,7 +29,7 @@ Anonymous is a beginner CTF privesc challenge. You need to find 2 flags to compl
 
 >Enumeration is defined as the process of extracting user names, machine names, network resources, shares, and services from a system. ... The gathered information is used to identify the vulnerabilities or weak points in system security and tries to exploit the System gaining phase.
 
-Let's start the enumeration process. Heuristic tinkering/passive scanning showed there was no webserver running but FTP and SSH is running.
+Let's start the enumeration process. Heuristic tinkering/passive scanning shows that there was no webserver running but FTP and SSH is running.
 
 
 ## Nmap

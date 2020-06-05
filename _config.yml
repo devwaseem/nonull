@@ -82,7 +82,7 @@ plugins:
 favicon: /assets/images/logo.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "n0nu11,hacking,ctf,tryhackme,writeup, learn hacking, hackthebox, hack the box, devwaseem, Waseem Akram, nonull,no null"
+keywords: "n0nu11,hacking,ctf,tryhackme,writeup, learn hacking, hackthebox, hack the box, devwaseem, Waseem Akram, nonull,no null,nonull,dvlp.er"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -366,7 +366,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night bright
 
 
 # ---------------------------------------------------------------

