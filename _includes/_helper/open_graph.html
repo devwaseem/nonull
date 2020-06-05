@@ -68,9 +68,11 @@
     <!--newline-->
   {% endif %}
 
-  {% if page.image or site.image %}
-  <meta property="og:image" content="{{ page.image or site.image }}">
-  {% else %}
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image }}">
+  {% elsif site.image %}
+  <meta property="og:image" content="{{ site.image}}">
+  {{%else %}}
     {% for image in images %}
     <meta property="og:image" content="{{ image }}">
     <!--newline-->

