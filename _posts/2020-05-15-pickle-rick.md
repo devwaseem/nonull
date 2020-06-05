@@ -122,7 +122,7 @@ cat Sup3rS3cretPickl3Ingred.txt
 
 ![](/assets/images/picklerick/picklerickcatfail.png)
 
-Uh oh!. We can't use \`cat\` command. Let's try \`less\` command then.
+Uh oh!. We can't use `cat` command. Let's try `less` command then.
 
 ![](/assets/images/picklerick/picklerickciless.png)
 
@@ -225,7 +225,7 @@ And we are Done!. Hurray!
 
 ## Before you leave
 
-If you have any constructive criticism or any questions, please drop an email at root@n0nu11.tech or ping me in [instagram](https://instagram.com/dvlp.er). I'll be happy to hear your feedback.
+If you have any constructive criticism or any questions, please drop an email at [root@n0nu11.tech](mailto:root@n0nu11.tech) or ping me in [instagram](https://instagram.com/dvlp.er). I'll be happy to hear your feedback.
 
 Follow me on  [ <i class="fa fa-github"></i> Github](https://github.com/devwaseem), [<i class="fa fa-twitter"></i> Twitter](https://twitter.com/iamwaseem99), [<i class="fa fa-instagram"></i> Instagram](https://www.instagram.com/dvlp.er/), [<i class="fa fa-facebook"></i> Facebook](https://www.facebook.com/dvlprwaseem), [<i class="fa fa-linkedin"></i> LinkedIn](https://www.linkedin.com/in/devwaseem/).
 
