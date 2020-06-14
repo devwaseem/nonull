@@ -25,14 +25,13 @@ Hi, My name is __Waseem Akram__ a.k.a **n0nu11**. I make Web apps, Mobile apps, 
 
 + Python
 + Swift
-+ Go lang
-+ Ruby
 + Javascript
-+ Kotlin
 + C
 + C++
 + Java
 + PHP
++ Ruby
++ Golang
 
 
 ## Projects
@@ -96,7 +95,7 @@ Hi, My name is __Waseem Akram__ a.k.a **n0nu11**. I make Web apps, Mobile apps, 
 
 All designs can be accessed [here](https://www.uplabs.com/devwaseem)
 
-## Frameworks/Technologies I'm familiar with
+## Frameworks/Technologies I'm familiar/worked with
 
 * Docker
 * React Native
