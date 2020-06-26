@@ -7,6 +7,7 @@ title:
   categories: Categories
   tags: Tags
   about: Whoami
+  notes: My Notes
 
 author: Author
 
@@ -16,6 +17,7 @@ menu:
   categories: Categories
   tags: Tags
   about: Whoami
+  notes: My Notes
   search: Search
   schedule: Schedule
   sitemap: Sitemap

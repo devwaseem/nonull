@@ -48,7 +48,7 @@
             {% if site.menu_icons.enable %}
               <i class="menu-item-icon fa fa-fw fa-{{site.menu_icons[itemName] | default: 'question-circle' | downcase }}"></i> <br />
             {% endif %}
-            {{ __.menu[name] }}
+            {{ __.menu[name]}}
           </a>
         </li>
       {% endfor %}

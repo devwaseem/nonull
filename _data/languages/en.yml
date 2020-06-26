@@ -7,6 +7,7 @@ title:
   categories: Categories
   tags: Tags
   about: About
+  notes: My Notes
 
 author: Author
 
@@ -15,6 +16,7 @@ menu:
   archives: Archives
   categories: Categories
   tags: Tags
+  notes: My Notes
   about: About
   search: Search
   schedule: Schedule

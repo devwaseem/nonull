@@ -125,6 +125,7 @@ menu:
   about: /about/
   archives: /archives/
   tags: /tags/
+  notes : https://notes.n0nu11.tech
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -142,9 +143,11 @@ menu_icons:
   categories: th
   schedule: calendar
   tags: tags
+  notes : book
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
+  
 
 
 
